@@ -206,3 +206,85 @@ nmap-sast-report/           # This repo (github.com/chemrid/nmap-sast-report)
 | `nmap-builder-gcc9:latest` | ubuntu:20.04 + GCC 9 | GCC 9 compatibility test |
 
 These images are local only. On MacBook, rebuild `nmap-sast` as described above.
+
+---
+
+## Onboarding Instructions for Claude Code (New Machine)
+
+**Read this section first if this is a fresh session on a new machine.**
+
+### Step 1 — Verify the environment
+
+Run the following checks and report what is missing:
+
+```bash
+git --version
+gh auth status
+docker info
+ls ~/projects/nmap-unprivileged/nmap.cc 2>/dev/null || echo "nmap-unprivileged not cloned"
+ls ~/projects/nmap-sast-report/README.md 2>/dev/null || echo "nmap-sast-report not cloned"
+```
+
+### Step 2 — Clone missing repositories
+
+If either repo is missing, clone it:
+
+```bash
+mkdir -p ~/projects
+git clone https://github.com/chemrid/nmap-unprivileged ~/projects/nmap-unprivileged
+git clone https://github.com/chemrid/nmap-sast-report ~/projects/nmap-sast-report
+```
+
+### Step 3 — Build the SAST Docker image if absent
+
+```bash
+docker image inspect nmap-sast:latest > /dev/null 2>&1 || docker build -t nmap-sast:latest - <<'EOF'
+FROM debian:bookworm
+RUN apt-get update -q && \
+    apt-get install -y --no-install-recommends \
+      cppcheck flawfinder shellcheck python3-pip git && \
+    pip3 install semgrep --break-system-packages && \
+    rm -rf /var/lib/apt/lists/*
+EOF
+```
+
+### Step 4 — Confirm context is loaded
+
+After completing steps 1–3, confirm to the user:
+- Which repos are present and at which commit
+- Whether the Docker image exists
+- What the recommended next action is (see "Possible Next Steps" section above)
+
+Do NOT proceed with any analysis until the user confirms the next step.
+
+### Step 5 — Running a new full scan (if requested)
+
+```bash
+docker run --rm \
+  -v "$HOME/projects/nmap-unprivileged:/mnt/src:ro" \
+  nmap-sast:latest \
+  bash -c 'cp -a /mnt/src /src && cd /src && sh sast-report.sh 2>&1'
+```
+
+On M1 Mac with native Docker: expect ~1–2 min per nmap.cc pass (vs ~7 min on Windows/WSL2).
+
+Results land in `/tmp/sast-report/` inside the container. To extract:
+
+```bash
+CONTAINER=$(docker run -d \
+  -v "$HOME/projects/nmap-unprivileged:/mnt/src:ro" \
+  nmap-sast:latest \
+  bash -c 'cp -a /mnt/src /src && cd /src && sh sast-report.sh')
+docker wait $CONTAINER
+docker cp $CONTAINER:/tmp/sast-report/. ~/projects/nmap-sast-report/results/
+docker rm $CONTAINER
+```
+
+After extraction, commit and push updated results:
+
+```bash
+cd ~/projects/nmap-sast-report
+git add results/
+git commit -m "Update SAST results from M1 Mac run"
+git push
+```

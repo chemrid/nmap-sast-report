@@ -1,0 +1,208 @@
+# Claude Code Context — nmap-unprivileged SAST Analysis
+
+This file gives a new Claude Code session full context to continue analysis on any machine.
+
+---
+
+## Project Overview
+
+**nmap-unprivileged** is a fork of nmap modified for air-gapped Linux deployments
+(RHEL / Astra Linux / Debian) with raw-socket privilege escalation removed.
+
+- **Source repo:** https://github.com/chemrid/nmap-unprivileged
+- **SAST results repo:** https://github.com/chemrid/nmap-sast-report (this repo)
+- **Commit analysed:** `5da159d77` (branch: master)
+
+### What Was Built
+
+Stripped nmap that works **without root/CAP_NET_RAW**:
+- TCP connect scan (`-sT`), service detection (`-sV`), NSE scripts work
+- SYN scan (`-sS`), UDP scan (`-sU`), OS detection (`-O`) blocked — print "requires root" and exit
+- No nping / ncat / ndiff / zenmap built
+- All dependencies bundled: libpcap, libdnet, libpcre, liblua, **OpenSSL 3.4.1**
+- JDWP NSE helper `.class` files compiled from `.java` at build time (no binary blobs)
+
+### Files Modified vs Upstream nmap
+
+| File | Change |
+|------|--------|
+| `nmap.cc` | Removed raw-socket exit guards for `-sS`/`-sU`/`-O` |
+| `NmapOps.cc` | Disabled `CAP_NET_RAW`-dependent options |
+| `libnetutil/PacketElement.h` | Added `#include <cstring>` after `#include "netutil.h"` (GCC 9+ fix) |
+| `libnetutil/netutil.cc` | Fixed include ordering |
+| `build-offline.sh` | New: full offline build (CRLF fix + OpenSSL + JDWP javac) |
+| `openssl/` | OpenSSL 3.4.1 source tree bundled (Apache 2.0) |
+
+---
+
+## SAST Setup
+
+### Docker Image
+
+```bash
+# Image used for all analysis (Debian Bookworm based):
+docker image: nmap-sast:latest
+# Contains: Cppcheck 2.10, Flawfinder 2.0.19, Semgrep 1.156.0, ShellCheck 0.9.0
+
+# To rebuild on MacBook (Apple Silicon — arm64):
+# The Dockerfile is NOT in this repo. Recreate with:
+docker run --rm debian:bookworm bash -c "
+  apt-get update -q &&
+  apt-get install -y cppcheck flawfinder shellcheck python3-pip git &&
+  pip3 install semgrep --break-system-packages
+"
+# Then tag as nmap-sast:latest
+```
+
+### Running the Full Analysis
+
+```bash
+# Clone source
+git clone https://github.com/chemrid/nmap-unprivileged /path/to/nmap-unprivileged
+
+# Run analysis (sources are copied INTO container to avoid slow Docker volume I/O)
+docker run --rm --network none \
+  -v "/path/to/nmap-unprivileged:/mnt/src:ro" \
+  nmap-sast:latest \
+  bash -c 'cp -a /mnt/src /src && cd /src && sh sast-report.sh 2>&1'
+```
+
+**Note on timing (Docker on Apple Silicon):** Each nmap.cc cppcheck pass takes ~1–2 min on
+native Linux/M1. Under Docker-on-Windows (WSL2) it was ~7 min. M1 Mac with native Docker
+should be significantly faster.
+
+### Key Script: sast-report.sh
+
+Located at `nmap-unprivileged/sast-report.sh`. Sections:
+1. Cppcheck core (24 files, `--max-configs=3 -j4`)
+2. **nmap.cc two-pass** (`--max-configs=1`, platform-fixed — see below)
+3. Cppcheck our mods (`--max-configs=3`)
+4. Flawfinder
+5. Semgrep (requires network — shows "parse error" offline)
+6. ShellCheck
+7. OpenSSL reference scan
+8. Delta analysis
+9. Summary table
+
+---
+
+## Known Issues and Decisions
+
+### nmap.cc cppcheck hang
+
+**Problem:** `cppcheck --max-configs=10` on `nmap.cc` hangs indefinitely on the
+`AI_CANONNAME;AI_NUMERICHOST;AI_PASSIVE;HAVE_GETADDRINFO=0` configuration combination.
+
+**Root cause:** Cppcheck 2.10 combinatorial explosion on getaddrinfo-related `#ifdef` chains.
+
+**Fix applied:** Two-pass approach in `sast-report.sh`:
+```bash
+# Pass 1: explicit HAVE_GETADDRINFO=0 (compact path)
+cppcheck --max-configs=1 -DHAVE_GETADDRINFO=0 -UAI_CANONNAME -UWIN32 ...
+
+# Pass 2: HAVE_GETADDRINFO undefined (default path)
+cppcheck --max-configs=1 -UHAVE_GETADDRINFO -UAI_CANONNAME -UWIN32 ...
+
+# Deduplicate
+sort -u pass1.txt pass2.txt > combined.txt
+```
+
+**Why not HAVE_GETADDRINFO=1:** Activating the getaddrinfo code path makes analysis even
+slower (DNS resolver code is very complex).
+
+### CRLF line endings
+
+**Problem:** Source checked out on Windows; autoconf `config.status` uses `$`-anchored sed
+that fails on `\r`-terminated lines. `HAVE_GETTIMEOFDAY` stays `#undef` → compile error.
+
+**Fix:** `build-offline.sh` runs `find . -name "*.in" | xargs sed -i 's/\r$//'`
+before `./configure`. Do NOT touch `*.ac`/`*.am` — triggers autoconf regeneration.
+
+### OpenSSL `lib` vs `lib64`
+
+**Problem:** OpenSSL Configure defaults to `--libdir=lib64`; nmap's configure only
+looks in `lib/`.
+
+**Fix:** `perl Configure --libdir=lib ...` in `build-offline.sh`.
+
+### GitHub Push Protection
+
+OpenSSL test certs (`openssl/demos/smime/cakey.pem`) flagged as "GitHub SSH Private Key".
+**Fix:** `openssl/.gitignore` excludes `*.pem`, `*.key`, `*.p12`, `*.pfx`.
+
+---
+
+## Test Results (21/21 passed on Debian Bookworm)
+
+Verified in Docker `--network none`:
+
+| Feature | Expected | Result |
+|---------|----------|--------|
+| `-sT` TCP connect | Works | ✓ |
+| `-sn` host discovery | Works | ✓ |
+| `-sV` service detection | Works | ✓ |
+| NSE scripts | Works | ✓ |
+| `-oX` XML output | Works | ✓ |
+| `-oG` grepable output | Works | ✓ |
+| `-sS` SYN scan | Rejected ("requires root") | ✓ |
+| `-sU` UDP scan | Rejected ("requires root") | ✓ |
+| `-O` OS detection | Rejected/skipped | ✓ |
+| nping/ncat/ndiff/zenmap | Not built | ✓ |
+| OpenSSL symbols in binary | None (`nm` clean) | ✓ |
+
+---
+
+## Possible Next Steps
+
+- [ ] Run Semgrep with network access (needs `p/c` ruleset download)
+- [ ] Run `cppcheck --max-configs=5` on nmap.cc with `-DHAVE_GETADDRINFO=1` — currently too slow under Docker-on-Windows, may be feasible on M1
+- [ ] Generate SARIF from Cppcheck XML: `pip install sarif-tools` then `sarif convert *.xml`
+- [ ] Upload results to GitHub Code Scanning (SARIF upload via `gh api`)
+- [ ] Review CWE-788 at `nmap.cc:1658` in context — upstream array OOB in MAC handling
+- [ ] Review CWE-475 in `libnetutil/netutil.cc` (7× NULL in variadic) — upstream portability issue
+
+---
+
+## Repository Structure
+
+```
+nmap-unprivileged/          # Source code (github.com/chemrid/nmap-unprivileged)
+├── nmap.cc                 # PRIMARY: raw-socket removal
+├── NmapOps.cc              # PRIMARY: disabled raw-scan options
+├── libnetutil/
+│   ├── PacketElement.h     # PRIMARY: added #include <cstring>
+│   └── netutil.cc          # PRIMARY: fixed include order
+├── build-offline.sh        # PRIMARY: offline build script
+├── openssl/                # OpenSSL 3.4.1 source (Apache 2.0)
+├── sast-report.sh          # SAST analysis script
+└── test-final.sh           # Functional test script (21 tests)
+
+nmap-sast-report/           # This repo (github.com/chemrid/nmap-sast-report)
+├── README.md               # Final SAST report
+├── CLAUDE.md               # This file — context for Claude Code
+├── results/                # Scanner outputs (native formats)
+└── sast-report.sh          # Copy of analysis script
+```
+
+---
+
+## GitHub Credentials
+
+- Account: `chemrid`
+- Remote name in nmap-unprivileged: `mine`
+- Corporate TLS cert required on Windows host: `C:/Users/dlutsiv/corporate-ca.crt`
+  - Set via: `git config http.sslCAInfo "C:/Users/dlutsiv/corporate-ca.crt"`
+  - On MacBook: standard system certs should work
+
+---
+
+## Docker Images (created on Windows host)
+
+| Image | Base | Purpose |
+|-------|------|---------|
+| `nmap-sast:latest` | debian:bookworm | SAST tools |
+| `nmap-openssl-test:latest` | debian:bookworm + perl + javac | Full build test |
+| `nmap-debian-test:latest` | debian:bookworm | Basic build test |
+| `nmap-builder-gcc9:latest` | ubuntu:20.04 + GCC 9 | GCC 9 compatibility test |
+
+These images are local only. On MacBook, rebuild `nmap-sast` as described above.

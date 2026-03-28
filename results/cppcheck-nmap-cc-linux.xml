@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;pos&gt;=6&apos; is redundant or the array &apos;mac_data[6]&apos; is accessed at index 6, which is out of bounds." verbose="Either the condition &apos;pos&gt;=6&apos; is redundant or the array &apos;mac_data[6]&apos; is accessed at index 6, which is out of bounds." cwe="788" file0="nmap.cc">
+            <location file="nmap.cc" line="1658" column="19" info="Array index out of bounds"/>
+            <location file="nmap.cc" line="1653" column="19" info="Assuming that condition &apos;pos&gt;=6&apos; is not redundant"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::machinefilename&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::machinefilename&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::machinefilename</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::kiddiefilename&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::kiddiefilename&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::kiddiefilename</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::normalfilename&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::normalfilename&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::normalfilename</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::xmlfilename&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::xmlfilename&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::xmlfilename</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::exclude_spec&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::exclude_spec&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::exclude_spec</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::exclude_file&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::exclude_file&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::exclude_file</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::spoofSource&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::spoofSource&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::spoofSource</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::decoy_arguments&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::decoy_arguments&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::decoy_arguments</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;delayed_options::spoofmac&apos; is not initialized in the constructor." verbose="Member variable &apos;delayed_options::spoofmac&apos; is not initialized in the constructor." cwe="398" file0="nmap.cc">
+            <location file="nmap.cc" line="453" column="3"/>
+            <symbol>delayed_options::spoofmac</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Struct &apos;FingerTest&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;FingerTest&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="nmap.cc">
+            <location file="osscan.h" line="202" column="7"/>
+            <symbol>FingerTest</symbol>
+        </error>
+        <error id="copyCtorPointerCopying" severity="warning" msg="Value of pointer &apos;results&apos;, which points to allocated memory, is copied in copy constructor instead of allocating new memory." verbose="Value of pointer &apos;results&apos;, which points to allocated memory, is copied in copy constructor instead of allocating new memory." cwe="398" file0="nmap.cc">
+            <location file="osscan.h" line="204" column="71"/>
+            <symbol>results</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!q&apos; is redundant or there is possible null pointer dereference: q." verbose="Either the condition &apos;!q&apos; is redundant or there is possible null pointer dereference: q." cwe="476" file0="nmap.cc">
+            <location file="nmap.cc" line="2506" column="6" info="Null pointer dereference"/>
+            <location file="nmap.cc" line="2504" column="9" info="Assuming that condition &apos;!q&apos; is not redundant"/>
+            <symbol>q</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!q&apos; is redundant or there is possible null pointer dereference: q." verbose="Either the condition &apos;!q&apos; is redundant or there is possible null pointer dereference: q." cwe="476" file0="nmap.cc">
+            <location file="nmap.cc" line="2528" column="8" info="Null pointer dereference"/>
+            <location file="nmap.cc" line="2526" column="11" info="Assuming that condition &apos;!q&apos; is not redundant"/>
+            <symbol>q</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!q&apos; is redundant or there is possible null pointer dereference: q." verbose="Either the condition &apos;!q&apos; is redundant or there is possible null pointer dereference: q." cwe="476" file0="nmap.cc">
+            <location file="nmap.cc" line="2547" column="10" info="Null pointer dereference"/>
+            <location file="nmap.cc" line="2545" column="13" info="Assuming that condition &apos;!q&apos; is not redundant"/>
+            <symbol>q</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!p&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!p&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="nmap.cc">
+            <location file="nmap.cc" line="2441" column="21" info="Null pointer addition"/>
+            <location file="nmap.cc" line="2442" column="13" info="Assuming that condition &apos;!p&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!p&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!p&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="nmap.cc">
+            <location file="nmap.cc" line="2449" column="6" info="Null pointer addition"/>
+            <location file="nmap.cc" line="2433" column="11" info="Assuming that condition &apos;!p&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!q&apos; is redundant or there is overflow in pointer subtraction." verbose="Either the condition &apos;!q&apos; is redundant or there is overflow in pointer subtraction." cwe="682" file0="nmap.cc">
+            <location file="nmap.cc" line="2462" column="10" info="Null pointer subtraction"/>
+            <location file="nmap.cc" line="2458" column="7" info="Assuming that condition &apos;!q&apos; is not redundant"/>
+        </error>
+    </errors>
+</results>

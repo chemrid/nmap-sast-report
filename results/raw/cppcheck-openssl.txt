@@ -1,0 +1,145 @@
+openssl/crypto/LPdir_win.c:184: [style] (arrayIndexThenCheck) Array index 'len_0' is used before limits check.
+openssl/crypto/asn1/asn1_local.h:15: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If SKM_DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/asn1/evp_asn1.c:90: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/asn1/n_pkey.c:44: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END_ref is a macro then please configure it.
+openssl/crypto/asn1/nsseq.c:32: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it.
+openssl/crypto/asn1/p5_pbe.c:22: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/asn1/p5_pbev2.c:41: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/asn1/p5_scrypt.c:29: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/asn1/p8_pkey.c:34: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it.
+openssl/crypto/asn1/tasn_typ.c:28: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_ASN1_TYPE is a macro then please configure it.
+openssl/crypto/asn1/x_bignum.c:59: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_ITEM_end is a macro then please configure it.
+openssl/crypto/asn1/x_algor.c:21: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/asn1/x_long.c:43: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_ITEM_end is a macro then please configure it.
+openssl/crypto/asn1/x_sig.c:19: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/asn1/x_spki.c:18: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/asn1/x_val.c:18: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/bio/bio_addr.c:828: [warning] (literalWithCharPtrCompare) String literal compared with variable 'NULL'. Did you intend to use strcmp() instead?
+openssl/crypto/bio/bio_sock2.c:421: [error] (uninitvar) Uninitialized variable: &locaddr
+openssl/crypto/bn/bn_lib.c:45: [portability] (shiftTooManyBitsSigned) Shifting signed 32-bit value by 31 bits is implementation-defined behaviour
+openssl/crypto/bn/bn_lib.c:51: [portability] (shiftTooManyBitsSigned) Shifting signed 32-bit value by 31 bits is implementation-defined behaviour
+openssl/crypto/bn/bn_lib.c:57: [portability] (shiftTooManyBitsSigned) Shifting signed 32-bit value by 31 bits is implementation-defined behaviour
+openssl/crypto/bn/bn_lib.c:63: [portability] (shiftTooManyBitsSigned) Shifting signed 32-bit value by 31 bits is implementation-defined behaviour
+openssl/crypto/bn/bn_lib.c:45: [error] (integerOverflow) Signed integer overflow for expression '1<<mult'.
+openssl/crypto/bn/bn_lib.c:51: [error] (integerOverflow) Signed integer overflow for expression '1<<high'.
+openssl/crypto/bn/bn_lib.c:57: [error] (integerOverflow) Signed integer overflow for expression '1<<low'.
+openssl/crypto/bn/bn_lib.c:63: [error] (integerOverflow) Signed integer overflow for expression '1<<mont'.
+openssl/crypto/bn/bn_nist.c:442: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -6, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:442: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -5, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:444: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -6, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:444: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -5, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:599: [error] (negativeIndex) Array 'buf.bn[7]' accessed at index -7, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:601: [error] (negativeIndex) Array 'buf.bn[7]' accessed at index -7, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:605: [error] (negativeIndex) Array 'buf.bn[7]' accessed at index -7, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:803: [error] (negativeIndex) Array 'buf.bn[8]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:807: [error] (negativeIndex) Array 'buf.bn[8]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:826: [error] (negativeIndex) Array 'buf.bn[8]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:836: [error] (negativeIndex) Array 'buf.bn[8]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:841: [error] (negativeIndex) Array 'buf.bn[8]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:846: [error] (negativeIndex) Array 'buf.bn[8]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:851: [error] (negativeIndex) Array 'buf.bn[8]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1067: [error] (negativeIndex) Array 'buf.bn[12]' accessed at index -8, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1096: [error] (negativeIndex) Array 'buf.bn[12]' accessed at index -12, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1102: [error] (negativeIndex) Array 'buf.bn[12]' accessed at index -12, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1107: [error] (negativeIndex) Array 'buf.bn[12]' accessed at index -12, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1118: [error] (negativeIndex) Array 'buf.bn[12]' accessed at index -12, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1123: [error] (negativeIndex) Array 'buf.bn[12]' accessed at index -12, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:442: [error] (negativeIndex) Array 'buf.bn[3]' accessed at index -3, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:444: [error] (negativeIndex) Array 'buf.bn[3]' accessed at index -3, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:599: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -3, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:601: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -3, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:605: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -3, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:803: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:807: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:826: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:836: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:841: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:846: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:851: [error] (negativeIndex) Array 'buf.bn[4]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1067: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -4, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1096: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -6, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1102: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -6, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1107: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -6, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1118: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -6, which is out of bounds.
+openssl/crypto/bn/bn_nist.c:1123: [error] (negativeIndex) Array 'buf.bn[6]' accessed at index -6, which is out of bounds.
+openssl/crypto/cmp/cmp_local.h:164: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it.
+openssl/crypto/cms/cms_local.h:367: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it.
+openssl/crypto/core_namemap.c:18: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If HT_START_KEY_DEFN is a macro then please configure it.
+openssl/crypto/crmf/crmf_local.h:72: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it.
+openssl/crypto/defaults.c:22: [error] (preprocessorErrorDirective) failed to expand 'REGISTRY_KEY', Invalid ## usage when expanding 'REGISTRY_KEY': Combining '"SOFTWARE\\WOW6432Node\\OpenSSL"' and '"-"' yields an invalid token.
+openssl/crypto/des/ofb64ede.c:42: [error] (uninitvar) Uninitialized variable: d
+openssl/crypto/des/ofb64ede.c:43: [error] (uninitvar) Uninitialized variable: dp
+openssl/crypto/des/ofb64enc.c:41: [error] (uninitvar) Uninitialized variable: d
+openssl/crypto/dh/dh_asn1.c:52: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it.
+openssl/crypto/dsa/dsa_asn1.c:48: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END_cb is a macro then please configure it.
+openssl/crypto/ec/curve448/curve448.c:100: [warning] (uninitvar) Uninitialized variable: b->n
+openssl/crypto/ec/ec_asn1.c:106: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/ec/ecp_nistp224.c:628: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp224.c:631: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp224.c:642: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp224.c:684: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp224.c:687: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp224.c:690: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp384.c:833: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp384.c:838: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp384.c:882: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp384.c:922: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/ec/ecp_nistp384.c:960: [portability] (shiftTooManyBitsSigned) Shifting signed 64-bit value by 63 bits is implementation-defined behaviour
+openssl/crypto/encode_decode/encoder_local.h:64: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/engine/eng_local.h:48: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/engine/eng_openssl.c:183: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_DYNAMIC_CHECK_FN is a macro then please configure it.
+openssl/crypto/ess/ess_asn1.c:22: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/evp/evp_local.h:271: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/evp/ctrl_params_translate.c:1163: [error] (autoVariables) Address of local auto-variable assigned to a function parameter.
+openssl/crypto/hpke/hpke_util.c:409: [warning] (identicalInnerCondition) Identical inner 'if' condition is always true.
+openssl/crypto/initthread.c:46: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF is a macro then please configure it.
+openssl/crypto/modes/xts128.c:74: [portability] (shiftTooManyBitsSigned) Shifting signed 32-bit value by 31 bits is implementation-defined behaviour
+openssl/crypto/modes/xts128.c:113: [portability] (shiftTooManyBitsSigned) Shifting signed 32-bit value by 31 bits is implementation-defined behaviour
+openssl/crypto/objects/obj_local.h:11: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/o_str.c:127: [error] (uninitvar) Uninitialized variable: &tmp_endptr
+openssl/crypto/objects/obj_xref.h:20: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/ocsp/ocsp_asn.c:19: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/param_build_set.c:20: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF_CONST is a macro then please configure it.
+openssl/crypto/pem/pem_all.c:37: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_PEM_rw is a macro then please configure it.
+openssl/crypto/pem/pem_pk8.c:269: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_PEM_rw is a macro then please configure it.
+openssl/crypto/pkcs12/p12_asn.c:23: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/pkcs7/pk7_asn1.c:132: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_NDEF_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/property/property.c:47: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/property/property_parse.c:23: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/provider_local.h:16: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/rsa/rsa_asn1.c:55: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/rsa/rsa_backend.c:36: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/rsa/rsa_lib.c:750: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/rsa/rsa_gen.c:74: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/rsa/rsa_pss.c:117: [style] (arrayIndexThenCheck) Array index 'i' is used before limits check.
+openssl/crypto/sm2/sm2_crypt.c:43: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/stack/stack.c:18: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_SIGNED is a macro then please configure it.
+openssl/crypto/ts/ts_asn1.c:18: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/ts/ts_rsp_sign.c:22: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF_CONST is a macro then please configure it.
+openssl/crypto/x509/x509_local.h:153: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it.
+openssl/crypto/x509/v3_admis.c:46: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_akeya.c:21: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_extku.c:72: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it.
+openssl/crypto/x509/v3_genn.c:20: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_info.c:51: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_ist.c:30: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_ncons.c:24: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_SIGNED is a macro then please configure it.
+openssl/crypto/x509/v3_pcia.c:53: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_pcons.c:39: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_pku.c:32: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_pmaps.c:37: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_sda.c:16: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it.
+openssl/crypto/x509/v3_sxnet.c:53: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/v3_usernotice.c:15: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it.
+openssl/crypto/x509/x509_acert.h:17: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_ITEM is a macro then please configure it.
+openssl/crypto/x509/x_ietfatt.c:54: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/crypto/x509/x_req.c:117: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_enc is a macro then please configure it.
+openssl/crypto/x509/x_pubkey.c:264: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_EXTERN_ASN1 is a macro then please configure it.
+openssl/crypto/x509/x_x509.c:29: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_enc is a macro then please configure it.
+openssl/crypto/x509/x_x509a.c:32: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it.
+openssl/ssl/record/record.h:186: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If OSSL_CORE_MAKE_FUNC is a macro then please configure it.
+openssl/ssl/quic/cc_newreno.c:5: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it.
+openssl/ssl/quic/qlog_event_helpers.c:20: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If QLOG_EVENT_BEGIN is a macro then please configure it.
+openssl/ssl/quic/quic_fc.c:16: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it.
+openssl/ssl/quic/quic_rcidm.c:313: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If OSSL_LIST_FOREACH_DELSAFE is a macro then please configure it.
+openssl/ssl/quic/quic_wire.c:17: [error] (unknownMacro) There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it.

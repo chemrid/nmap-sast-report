@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 3 of 73 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="NmapOps.cc" line="0" column="0"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NmapOps::traceroute&apos; is not initialized in the constructor." verbose="Member variable &apos;NmapOps::traceroute&apos; is not initialized in the constructor." cwe="398" file0="NmapOps.cc">
+            <location file="NmapOps.cc" line="75" column="10"/>
+            <symbol>NmapOps::traceroute</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NmapOps::scriptargsfile&apos; is not initialized in the constructor." verbose="Member variable &apos;NmapOps::scriptargsfile&apos; is not initialized in the constructor." cwe="398" file0="NmapOps.cc">
+            <location file="NmapOps.cc" line="75" column="10"/>
+            <symbol>NmapOps::scriptargsfile</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NmapOps::spoof_mac&apos; is not initialized in the constructor." verbose="Member variable &apos;NmapOps::spoof_mac&apos; is not initialized in the constructor." cwe="398" file0="NmapOps.cc">
+            <location file="NmapOps.cc" line="75" column="10"/>
+            <symbol>NmapOps::spoof_mac</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Struct &apos;FingerTest&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;FingerTest&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="NmapOps.cc">
+            <location file="osscan.h" line="202" column="7"/>
+            <symbol>FingerTest</symbol>
+        </error>
+        <error id="copyCtorPointerCopying" severity="warning" msg="Value of pointer &apos;results&apos;, which points to allocated memory, is copied in copy constructor instead of allocating new memory." verbose="Value of pointer &apos;results&apos;, which points to allocated memory, is copied in copy constructor instead of allocating new memory." cwe="398" file0="NmapOps.cc">
+            <location file="osscan.h" line="204" column="71"/>
+            <symbol>results</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Attr&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Attr&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="NmapOps.cc">
+            <location file="osscan.h" line="134" column="3"/>
+            <symbol>Attr</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;ShortStr &lt; 5 &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;ShortStr &lt; 5 &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="NmapOps.cc">
+            <location file="osscan.h" line="105" column="3"/>
+            <symbol>ShortStr &lt; 5 &gt;</symbol>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &apos;sourcesocklen&apos; is less than zero." verbose="The unsigned expression &apos;sourcesocklen&apos; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="NmapOps.cc">
+            <location file="NmapOps.cc" line="153" column="21" info="Unsigned less than zero"/>
+            <symbol>sourcesocklen</symbol>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &apos;sz&apos; is less than zero." verbose="The unsigned expression &apos;sz&apos; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="NmapOps.cc">
+            <location file="NmapOps.cc" line="580" column="10" info="Unsigned less than zero"/>
+            <symbol>sz</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="NmapOps.cc">
+            <location file="output.h" line="210" column="43"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 3 of 63 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="libnetutil/PacketElement.h" line="0" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classPacketElement{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classPacketElement{&apos; is invalid C code. Use --std or --language to configure the language." file0="libnetutil/PacketElement.h">
+            <location file="libnetutil/PacketElement.h" line="105" column="1"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 3 of 103 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="libnetutil/netutil.cc" line="0" column="0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!pcap_selectable_fd_one_to_one()&apos; is always false" verbose="Condition &apos;!pcap_selectable_fd_one_to_one()&apos; is always false" cwe="570" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4401" column="9" info="Condition &apos;!pcap_selectable_fd_one_to_one()&apos; is always false"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;pcap_status==0&apos; is always true" verbose="Condition &apos;pcap_status==0&apos; is always true" cwe="571" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4418" column="21" info="Condition &apos;pcap_status==0&apos; is always true"/>
+            <location file="libnetutil/netutil.cc" line="4397" column="23" info="Assignment &apos;pcap_status=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="476" column="38"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="514" column="14"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="612" column="7"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="635" column="9"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="656" column="34"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="989" column="22"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1406" column="27"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1407" column="27"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1448" column="21"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1472" column="44"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1484" column="23"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1565" column="18"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1680" column="11"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1681" column="11"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1687" column="11"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1688" column="11"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1705" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1706" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1707" column="11"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1714" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1715" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1716" column="11"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1734" column="12"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1739" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1823" column="44"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1828" column="21"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1848" column="18"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1922" column="12"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1930" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2222" column="26"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2261" column="28"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2373" column="10"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2387" column="11"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2411" column="43"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2419" column="43"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2434" column="43"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2441" column="12"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2445" column="22"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2447" column="22"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2475" column="12"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2514" column="32"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2545" column="28"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2689" column="28"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2726" column="12"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2749" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2835" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2836" column="16"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2848" column="16"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2875" column="39"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2876" column="39"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2877" column="41"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2982" column="22"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2999" column="23"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3031" column="22"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3039" column="23"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3063" column="21"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3118" column="17"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3426" column="25"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3481" column="42"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3628" column="28"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3634" column="52"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3693" column="19"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3699" column="19"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3708" column="10"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3712" column="10"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3735" column="20"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3748" column="33"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3752" column="33"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3803" column="20"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3818" column="17"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3820" column="9"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3905" column="28"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3987" column="18"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3997" column="10"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4049" column="18"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4495" column="20"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4497" column="20"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4498" column="15"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4499" column="15"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4534" column="23"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4548" column="19"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4577" column="9"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4578" column="24"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4592" column="23"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4637" column="18"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4638" column="15"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4684" column="29"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4741" column="42"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4742" column="39"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4781" column="30"/>
+        </error>
+        <error id="duplicateExpressionTernary" severity="style" msg="Same expression in both branches of ternary operator." verbose="Finding the same expression in both branches of ternary operator is suspicious as the same code is executed regardless of the condition." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2088" column="3"/>
+        </error>
+        <error id="duplicateExpressionTernary" severity="style" msg="Same expression in both branches of ternary operator." verbose="Finding the same expression in both branches of ternary operator is suspicious as the same code is executed regardless of the condition." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2091" column="3"/>
+        </error>
+        <error id="duplicateExpressionTernary" severity="style" msg="Same expression in both branches of ternary operator." verbose="Finding the same expression in both branches of ternary operator is suspicious as the same code is executed regardless of the condition." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2092" column="3"/>
+        </error>
+        <error id="duplicateExpressionTernary" severity="style" msg="Same expression in both branches of ternary operator." verbose="Finding the same expression in both branches of ternary operator is suspicious as the same code is executed regardless of the condition." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2097" column="3"/>
+        </error>
+        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3091" column="9"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;opcode&apos; can be reduced." verbose="The scope of the variable &apos;opcode&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1280" column="7"/>
+            <symbol>opcode</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;listenrounds&apos; can be reduced." verbose="The scope of the variable &apos;listenrounds&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4623" column="7"/>
+            <symbol>listenrounds</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;rc&apos; can be reduced." verbose="The scope of the variable &apos;rc&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4624" column="7"/>
+            <symbol>rc</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;listenrounds&apos; can be reduced." verbose="The scope of the variable &apos;listenrounds&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4745" column="7"/>
+            <symbol>listenrounds</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;rc&apos; can be reduced." verbose="The scope of the variable &apos;rc&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4746" column="7"/>
+            <symbol>rc</symbol>
+        </error>
+        <error id="varFuncNullUB" severity="portability" msg="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour." verbose="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.\012The C99 standard, in section 7.15.1.1, states that if the type used by va_arg() is not compatible with the type of the actual next argument (as promoted according to the default argument promotions), the behavior is undefined.\012The value of the NULL macro is an implementation-defined null pointer constant (7.17), which can be any integer constant expression with the value 0, or such an expression casted to (void*) (6.3.2.3). This includes values like 0, 0L, or even 0LL.\012In practice on common architectures, this will cause real crashes if sizeof(int) != sizeof(void*), and NULL is defined to 0 or any other null pointer constant that promotes to int.\012To reproduce you might be able to use this little code example on 64bit platforms. If the output includes &quot;ERROR&quot;, the sentinel had only 4 out of 8 bytes initialized to zero and was not detected as the final argument to stop argument processing via va_arg(). Changing the 0 to (void*)0 or 0L will make the &quot;ERROR&quot; output go away.\012#include &lt;stdarg.h&gt;\012#include &lt;stdio.h&gt;\012\012void f(char *s, ...) {\012    va_list ap;\012    va_start(ap,s);\012    for (;;) {\012        char *p = va_arg(ap,char*);\012        printf(&quot;%018p, %s\n&quot;, p, (long)p &amp; 255 ? p : &quot;&quot;);\012        if(!p) break;\012    }\012    va_end(ap);\012}\012\012void g() {\012    char *s2 = &quot;x&quot;;\012    char *s3 = &quot;ERROR&quot;;\012\012    // changing 0 to 0L for the 7th argument (which is intended to act as sentinel) makes the error go away on x86_64\012    f(&quot;first&quot;, s2, s2, s2, s2, s2, 0, s3, (char*)0);\012}\012\012void h() {\012    int i;\012    volatile unsigned char a[1000];\012    for (i = 0; i&lt;sizeof(a); i++)\012        a[i] = -1;\012}\012\012int main() {\012    h();\012    g();\012    return 0;\012}" cwe="475" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2169" column="14"/>
+        </error>
+        <error id="varFuncNullUB" severity="portability" msg="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour." verbose="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.\012The C99 standard, in section 7.15.1.1, states that if the type used by va_arg() is not compatible with the type of the actual next argument (as promoted according to the default argument promotions), the behavior is undefined.\012The value of the NULL macro is an implementation-defined null pointer constant (7.17), which can be any integer constant expression with the value 0, or such an expression casted to (void*) (6.3.2.3). This includes values like 0, 0L, or even 0LL.\012In practice on common architectures, this will cause real crashes if sizeof(int) != sizeof(void*), and NULL is defined to 0 or any other null pointer constant that promotes to int.\012To reproduce you might be able to use this little code example on 64bit platforms. If the output includes &quot;ERROR&quot;, the sentinel had only 4 out of 8 bytes initialized to zero and was not detected as the final argument to stop argument processing via va_arg(). Changing the 0 to (void*)0 or 0L will make the &quot;ERROR&quot; output go away.\012#include &lt;stdarg.h&gt;\012#include &lt;stdio.h&gt;\012\012void f(char *s, ...) {\012    va_list ap;\012    va_start(ap,s);\012    for (;;) {\012        char *p = va_arg(ap,char*);\012        printf(&quot;%018p, %s\n&quot;, p, (long)p &amp; 255 ? p : &quot;&quot;);\012        if(!p) break;\012    }\012    va_end(ap);\012}\012\012void g() {\012    char *s2 = &quot;x&quot;;\012    char *s3 = &quot;ERROR&quot;;\012\012    // changing 0 to 0L for the 7th argument (which is intended to act as sentinel) makes the error go away on x86_64\012    f(&quot;first&quot;, s2, s2, s2, s2, s2, 0, s3, (char*)0);\012}\012\012void h() {\012    int i;\012    volatile unsigned char a[1000];\012    for (i = 0; i&lt;sizeof(a); i++)\012        a[i] = -1;\012}\012\012int main() {\012    h();\012    g();\012    return 0;\012}" cwe="475" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2191" column="19"/>
+        </error>
+        <error id="varFuncNullUB" severity="portability" msg="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour." verbose="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.\012The C99 standard, in section 7.15.1.1, states that if the type used by va_arg() is not compatible with the type of the actual next argument (as promoted according to the default argument promotions), the behavior is undefined.\012The value of the NULL macro is an implementation-defined null pointer constant (7.17), which can be any integer constant expression with the value 0, or such an expression casted to (void*) (6.3.2.3). This includes values like 0, 0L, or even 0LL.\012In practice on common architectures, this will cause real crashes if sizeof(int) != sizeof(void*), and NULL is defined to 0 or any other null pointer constant that promotes to int.\012To reproduce you might be able to use this little code example on 64bit platforms. If the output includes &quot;ERROR&quot;, the sentinel had only 4 out of 8 bytes initialized to zero and was not detected as the final argument to stop argument processing via va_arg(). Changing the 0 to (void*)0 or 0L will make the &quot;ERROR&quot; output go away.\012#include &lt;stdarg.h&gt;\012#include &lt;stdio.h&gt;\012\012void f(char *s, ...) {\012    va_list ap;\012    va_start(ap,s);\012    for (;;) {\012        char *p = va_arg(ap,char*);\012        printf(&quot;%018p, %s\n&quot;, p, (long)p &amp; 255 ? p : &quot;&quot;);\012        if(!p) break;\012    }\012    va_end(ap);\012}\012\012void g() {\012    char *s2 = &quot;x&quot;;\012    char *s3 = &quot;ERROR&quot;;\012\012    // changing 0 to 0L for the 7th argument (which is intended to act as sentinel) makes the error go away on x86_64\012    f(&quot;first&quot;, s2, s2, s2, s2, s2, 0, s3, (char*)0);\012}\012\012void h() {\012    int i;\012    volatile unsigned char a[1000];\012    for (i = 0; i&lt;sizeof(a); i++)\012        a[i] = -1;\012}\012\012int main() {\012    h();\012    g();\012    return 0;\012}" cwe="475" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2195" column="19"/>
+        </error>
+        <error id="varFuncNullUB" severity="portability" msg="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour." verbose="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.\012The C99 standard, in section 7.15.1.1, states that if the type used by va_arg() is not compatible with the type of the actual next argument (as promoted according to the default argument promotions), the behavior is undefined.\012The value of the NULL macro is an implementation-defined null pointer constant (7.17), which can be any integer constant expression with the value 0, or such an expression casted to (void*) (6.3.2.3). This includes values like 0, 0L, or even 0LL.\012In practice on common architectures, this will cause real crashes if sizeof(int) != sizeof(void*), and NULL is defined to 0 or any other null pointer constant that promotes to int.\012To reproduce you might be able to use this little code example on 64bit platforms. If the output includes &quot;ERROR&quot;, the sentinel had only 4 out of 8 bytes initialized to zero and was not detected as the final argument to stop argument processing via va_arg(). Changing the 0 to (void*)0 or 0L will make the &quot;ERROR&quot; output go away.\012#include &lt;stdarg.h&gt;\012#include &lt;stdio.h&gt;\012\012void f(char *s, ...) {\012    va_list ap;\012    va_start(ap,s);\012    for (;;) {\012        char *p = va_arg(ap,char*);\012        printf(&quot;%018p, %s\n&quot;, p, (long)p &amp; 255 ? p : &quot;&quot;);\012        if(!p) break;\012    }\012    va_end(ap);\012}\012\012void g() {\012    char *s2 = &quot;x&quot;;\012    char *s3 = &quot;ERROR&quot;;\012\012    // changing 0 to 0L for the 7th argument (which is intended to act as sentinel) makes the error go away on x86_64\012    f(&quot;first&quot;, s2, s2, s2, s2, s2, 0, s3, (char*)0);\012}\012\012void h() {\012    int i;\012    volatile unsigned char a[1000];\012    for (i = 0; i&lt;sizeof(a); i++)\012        a[i] = -1;\012}\012\012int main() {\012    h();\012    g();\012    return 0;\012}" cwe="475" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2277" column="21"/>
+        </error>
+        <error id="varFuncNullUB" severity="portability" msg="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour." verbose="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.\012The C99 standard, in section 7.15.1.1, states that if the type used by va_arg() is not compatible with the type of the actual next argument (as promoted according to the default argument promotions), the behavior is undefined.\012The value of the NULL macro is an implementation-defined null pointer constant (7.17), which can be any integer constant expression with the value 0, or such an expression casted to (void*) (6.3.2.3). This includes values like 0, 0L, or even 0LL.\012In practice on common architectures, this will cause real crashes if sizeof(int) != sizeof(void*), and NULL is defined to 0 or any other null pointer constant that promotes to int.\012To reproduce you might be able to use this little code example on 64bit platforms. If the output includes &quot;ERROR&quot;, the sentinel had only 4 out of 8 bytes initialized to zero and was not detected as the final argument to stop argument processing via va_arg(). Changing the 0 to (void*)0 or 0L will make the &quot;ERROR&quot; output go away.\012#include &lt;stdarg.h&gt;\012#include &lt;stdio.h&gt;\012\012void f(char *s, ...) {\012    va_list ap;\012    va_start(ap,s);\012    for (;;) {\012        char *p = va_arg(ap,char*);\012        printf(&quot;%018p, %s\n&quot;, p, (long)p &amp; 255 ? p : &quot;&quot;);\012        if(!p) break;\012    }\012    va_end(ap);\012}\012\012void g() {\012    char *s2 = &quot;x&quot;;\012    char *s3 = &quot;ERROR&quot;;\012\012    // changing 0 to 0L for the 7th argument (which is intended to act as sentinel) makes the error go away on x86_64\012    f(&quot;first&quot;, s2, s2, s2, s2, s2, 0, s3, (char*)0);\012}\012\012void h() {\012    int i;\012    volatile unsigned char a[1000];\012    for (i = 0; i&lt;sizeof(a); i++)\012        a[i] = -1;\012}\012\012int main() {\012    h();\012    g();\012    return 0;\012}" cwe="475" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2305" column="14"/>
+        </error>
+        <error id="varFuncNullUB" severity="portability" msg="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour." verbose="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.\012The C99 standard, in section 7.15.1.1, states that if the type used by va_arg() is not compatible with the type of the actual next argument (as promoted according to the default argument promotions), the behavior is undefined.\012The value of the NULL macro is an implementation-defined null pointer constant (7.17), which can be any integer constant expression with the value 0, or such an expression casted to (void*) (6.3.2.3). This includes values like 0, 0L, or even 0LL.\012In practice on common architectures, this will cause real crashes if sizeof(int) != sizeof(void*), and NULL is defined to 0 or any other null pointer constant that promotes to int.\012To reproduce you might be able to use this little code example on 64bit platforms. If the output includes &quot;ERROR&quot;, the sentinel had only 4 out of 8 bytes initialized to zero and was not detected as the final argument to stop argument processing via va_arg(). Changing the 0 to (void*)0 or 0L will make the &quot;ERROR&quot; output go away.\012#include &lt;stdarg.h&gt;\012#include &lt;stdio.h&gt;\012\012void f(char *s, ...) {\012    va_list ap;\012    va_start(ap,s);\012    for (;;) {\012        char *p = va_arg(ap,char*);\012        printf(&quot;%018p, %s\n&quot;, p, (long)p &amp; 255 ? p : &quot;&quot;);\012        if(!p) break;\012    }\012    va_end(ap);\012}\012\012void g() {\012    char *s2 = &quot;x&quot;;\012    char *s3 = &quot;ERROR&quot;;\012\012    // changing 0 to 0L for the 7th argument (which is intended to act as sentinel) makes the error go away on x86_64\012    f(&quot;first&quot;, s2, s2, s2, s2, s2, 0, s3, (char*)0);\012}\012\012void h() {\012    int i;\012    volatile unsigned char a[1000];\012    for (i = 0; i&lt;sizeof(a); i++)\012        a[i] = -1;\012}\012\012int main() {\012    h();\012    g();\012    return 0;\012}" cwe="475" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2313" column="17"/>
+        </error>
+        <error id="varFuncNullUB" severity="portability" msg="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour." verbose="Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.\012The C99 standard, in section 7.15.1.1, states that if the type used by va_arg() is not compatible with the type of the actual next argument (as promoted according to the default argument promotions), the behavior is undefined.\012The value of the NULL macro is an implementation-defined null pointer constant (7.17), which can be any integer constant expression with the value 0, or such an expression casted to (void*) (6.3.2.3). This includes values like 0, 0L, or even 0LL.\012In practice on common architectures, this will cause real crashes if sizeof(int) != sizeof(void*), and NULL is defined to 0 or any other null pointer constant that promotes to int.\012To reproduce you might be able to use this little code example on 64bit platforms. If the output includes &quot;ERROR&quot;, the sentinel had only 4 out of 8 bytes initialized to zero and was not detected as the final argument to stop argument processing via va_arg(). Changing the 0 to (void*)0 or 0L will make the &quot;ERROR&quot; output go away.\012#include &lt;stdarg.h&gt;\012#include &lt;stdio.h&gt;\012\012void f(char *s, ...) {\012    va_list ap;\012    va_start(ap,s);\012    for (;;) {\012        char *p = va_arg(ap,char*);\012        printf(&quot;%018p, %s\n&quot;, p, (long)p &amp; 255 ? p : &quot;&quot;);\012        if(!p) break;\012    }\012    va_end(ap);\012}\012\012void g() {\012    char *s2 = &quot;x&quot;;\012    char *s3 = &quot;ERROR&quot;;\012\012    // changing 0 to 0L for the 7th argument (which is intended to act as sentinel) makes the error go away on x86_64\012    f(&quot;first&quot;, s2, s2, s2, s2, s2, 0, s3, (char*)0);\012}\012\012void h() {\012    int i;\012    volatile unsigned char a[1000];\012    for (i = 0; i&lt;sizeof(a); i++)\012        a[i] = -1;\012}\012\012int main() {\012    h();\012    g();\012    return 0;\012}" cwe="475" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="2320" column="19"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;timeouts&apos; can be declared as const array" verbose="Variable &apos;timeouts&apos; can be declared as const array" cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4616" column="7" info="Variable &apos;timeouts&apos; can be declared as const array"/>
+            <symbol>timeouts</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;timeouts&apos; can be declared as const array" verbose="Variable &apos;timeouts&apos; can be declared as const array" cwe="398" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4736" column="7" info="Variable &apos;timeouts&apos; can be declared as const array"/>
+            <symbol>timeouts</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;i&apos; is assigned a value that is never used." verbose="Variable &apos;i&apos; is assigned a value that is never used." cwe="563" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="1283" column="17"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;sleeptime&apos; is assigned a value that is never used." verbose="Variable &apos;sleeptime&apos; is assigned a value that is never used." cwe="563" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3624" column="17"/>
+            <symbol>sleeptime</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;fdatalen&apos; is assigned a value that is never used." verbose="Variable &apos;fdatalen&apos; is assigned a value that is never used." cwe="563" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="3806" column="16"/>
+            <symbol>fdatalen</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;maxfds&apos; is assigned a value that is never used." verbose="Variable &apos;maxfds&apos; is assigned a value that is never used." cwe="563" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4892" column="13"/>
+            <symbol>maxfds</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;flag&apos; is assigned a value that is never used." verbose="Variable &apos;flag&apos; is assigned a value that is never used." cwe="563" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4893" column="11"/>
+            <symbol>flag</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;flag&apos; is assigned a value that is never used." verbose="Variable &apos;flag&apos; is assigned a value that is never used." cwe="563" file0="libnetutil/netutil.cc">
+            <location file="libnetutil/netutil.cc" line="4934" column="11"/>
+            <symbol>flag</symbol>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;AF_LINK&apos; since the value of &apos;AF_LINK&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;AF_LINK&apos; since the value of &apos;AF_LINK&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="libnetutil/netutil.cc" line="1493" column="0"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;AF_LINK&apos; since the value of &apos;AF_LINK&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;AF_LINK&apos; since the value of &apos;AF_LINK&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="libnetutil/netutil.cc" line="1506" column="0"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ReInit&apos; is never used." verbose="The function &apos;ReInit&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="143" column="0"/>
+            <symbol>ReInit</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;pf&apos; is never used." verbose="The function &apos;pf&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="148" column="0"/>
+            <symbol>pf</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;SourceSockAddr&apos; is never used." verbose="The function &apos;SourceSockAddr&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="152" column="0"/>
+            <symbol>SourceSockAddr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setSourceSockAddr&apos; is never used." verbose="The function &apos;setSourceSockAddr&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="173" column="0"/>
+            <symbol>setSourceSockAddr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;TimeSinceStart&apos; is never used." verbose="The function &apos;TimeSinceStart&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="181" column="0"/>
+            <symbol>TimeSinceStart</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;RawScan&apos; is never used." verbose="The function &apos;RawScan&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="347" column="0"/>
+            <symbol>RawScan</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ValidateOptions&apos; is never used." verbose="The function &apos;ValidateOptions&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="361" column="0"/>
+            <symbol>ValidateOptions</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setMaxOSTries&apos; is never used." verbose="The function &apos;setMaxOSTries&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="533" column="0"/>
+            <symbol>setMaxOSTries</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setMaxRttTimeout&apos; is never used." verbose="The function &apos;setMaxRttTimeout&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="539" column="0"/>
+            <symbol>setMaxRttTimeout</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setMinRttTimeout&apos; is never used." verbose="The function &apos;setMinRttTimeout&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="547" column="0"/>
+            <symbol>setMinRttTimeout</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setInitialRttTimeout&apos; is never used." verbose="The function &apos;setInitialRttTimeout&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="555" column="0"/>
+            <symbol>setInitialRttTimeout</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setMaxRetransmissions&apos; is never used." verbose="The function &apos;setMaxRetransmissions&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="563" column="0"/>
+            <symbol>setMaxRetransmissions</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setMinHostGroupSz&apos; is never used." verbose="The function &apos;setMinHostGroupSz&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="571" column="0"/>
+            <symbol>setMinHostGroupSz</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setMaxHostGroupSz&apos; is never used." verbose="The function &apos;setMaxHostGroupSz&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="577" column="0"/>
+            <symbol>setMaxHostGroupSz</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setXSLStyleSheet&apos; is never used." verbose="The function &apos;setXSLStyleSheet&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="589" column="0"/>
+            <symbol>setXSLStyleSheet</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;XSLStyleSheet&apos; is never used." verbose="The function &apos;XSLStyleSheet&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="598" column="0"/>
+            <symbol>XSLStyleSheet</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;setSpoofMACAddress&apos; is never used." verbose="The function &apos;setSpoofMACAddress&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="615" column="0"/>
+            <symbol>setSpoofMACAddress</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;chooseScripts&apos; is never used." verbose="The function &apos;chooseScripts&apos; is never used." cwe="561">
+            <location file="NmapOps.cc" line="621" column="0"/>
+            <symbol>chooseScripts</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;parse_ip_options&apos; is never used." verbose="The function &apos;parse_ip_options&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="205" column="0"/>
+            <symbol>parse_ip_options</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;resolve&apos; is never used." verbose="The function &apos;resolve&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="400" column="0"/>
+            <symbol>resolve</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;resolve_numeric&apos; is never used." verbose="The function &apos;resolve_numeric&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="407" column="0"/>
+            <symbol>resolve_numeric</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ip_is_reserved&apos; is never used." verbose="The function &apos;ip_is_reserved&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="427" column="0"/>
+            <symbol>ip_is_reserved</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mac_cache_get&apos; is never used." verbose="The function &apos;mac_cache_get&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="543" column="0"/>
+            <symbol>mac_cache_get</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mac_cache_set&apos; is never used." verbose="The function &apos;mac_cache_set&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="546" column="0"/>
+            <symbol>mac_cache_set</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;in_cksum&apos; is never used." verbose="The function &apos;in_cksum&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="551" column="0"/>
+            <symbol>in_cksum</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ip_get_data&apos; is never used." verbose="The function &apos;ip_get_data&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="683" column="0"/>
+            <symbol>ip_get_data</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ipv6_get_data&apos; is never used." verbose="The function &apos;ipv6_get_data&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="716" column="0"/>
+            <symbol>ipv6_get_data</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ipv6_get_data_any&apos; is never used." verbose="The function &apos;ipv6_get_data_any&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="724" column="0"/>
+            <symbol>ipv6_get_data_any</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;icmp_get_data&apos; is never used." verbose="The function &apos;icmp_get_data&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="729" column="0"/>
+            <symbol>icmp_get_data</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;icmpv6_get_data&apos; is never used." verbose="The function &apos;icmpv6_get_data&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="744" column="0"/>
+            <symbol>icmpv6_get_data</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ipv4_pseudoheader_cksum&apos; is never used." verbose="The function &apos;ipv4_pseudoheader_cksum&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="763" column="0"/>
+            <symbol>ipv4_pseudoheader_cksum</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ipv6_pseudoheader_cksum&apos; is never used." verbose="The function &apos;ipv6_pseudoheader_cksum&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="799" column="0"/>
+            <symbol>ipv6_pseudoheader_cksum</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_ipoptions&apos; is never used." verbose="The function &apos;set_ipoptions&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="837" column="0"/>
+            <symbol>set_ipoptions</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_ttl&apos; is never used." verbose="The function &apos;set_ttl&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="846" column="0"/>
+            <symbol>set_ttl</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eth_close_cached&apos; is never used." verbose="The function &apos;eth_close_cached&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="1095" column="0"/>
+            <symbol>eth_close_cached</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;raw_socket_or_eth&apos; is never used." verbose="The function &apos;raw_socket_or_eth&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="1144" column="0"/>
+            <symbol>raw_socket_or_eth</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;proto2ascii_lowercase&apos; is never used." verbose="The function &apos;proto2ascii_lowercase&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="1264" column="0"/>
+            <symbol>proto2ascii_lowercase</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;proto2ascii_uppercase&apos; is never used." verbose="The function &apos;proto2ascii_uppercase&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="1267" column="0"/>
+            <symbol>proto2ascii_uppercase</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;freeinterfaces&apos; is never used." verbose="The function &apos;freeinterfaces&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="1605" column="0"/>
+            <symbol>freeinterfaces</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;devname2ipaddr&apos; is never used." verbose="The function &apos;devname2ipaddr&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="1631" column="0"/>
+            <symbol>devname2ipaddr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;islocalhost&apos; is never used." verbose="The function &apos;islocalhost&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="1916" column="0"/>
+            <symbol>islocalhost</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;route_dst&apos; is never used." verbose="The function &apos;route_dst&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="3605" column="0"/>
+            <symbol>route_dst</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;send_frag_ip_packet&apos; is never used." verbose="The function &apos;send_frag_ip_packet&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="3800" column="0"/>
+            <symbol>send_frag_ip_packet</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;send_ipv6_packet_eth_or_sd&apos; is never used." verbose="The function &apos;send_ipv6_packet_eth_or_sd&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="4067" column="0"/>
+            <symbol>send_ipv6_packet_eth_or_sd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;doND&apos; is never used." verbose="The function &apos;doND&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="4608" column="0"/>
+            <symbol>doND</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;doArp&apos; is never used." verbose="The function &apos;doArp&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="4728" column="0"/>
+            <symbol>doArp</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;grab_next_host_spec&apos; is never used." verbose="The function &apos;grab_next_host_spec&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="4862" column="0"/>
+            <symbol>grab_next_host_spec</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;get_max_open_descriptors&apos; is never used." verbose="The function &apos;get_max_open_descriptors&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="4931" column="0"/>
+            <symbol>get_max_open_descriptors</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;max_sd&apos; is never used." verbose="The function &apos;max_sd&apos; is never used." cwe="561">
+            <location file="libnetutil/netutil.cc" line="4956" column="0"/>
+            <symbol>max_sd</symbol>
+        </error>
+        <error id="unmatchedSuppression" severity="information" msg="Unmatched suppression: missingIncludeSystem" verbose="Unmatched suppression: missingIncludeSystem"/>
+    </errors>
+</results>

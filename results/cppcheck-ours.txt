@@ -1,0 +1,183 @@
+NmapOps.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 75 configurations. Use --force to check all configurations.
+NmapOps.cc:75: [warning][CWE-398] (uninitMemberVar) Member variable 'NmapOps::traceroute' is not initialized in the constructor.
+NmapOps.cc:75: [warning][CWE-398] (uninitMemberVar) Member variable 'NmapOps::scriptargsfile' is not initialized in the constructor.
+NmapOps.cc:75: [warning][CWE-398] (uninitMemberVar) Member variable 'NmapOps::spoof_mac' is not initialized in the constructor.
+osscan.h:202: [warning][CWE-398] (noOperatorEq) Struct 'FingerTest' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+osscan.h:204: [warning][CWE-398] (copyCtorPointerCopying) Value of pointer 'results', which points to allocated memory, is copied in copy constructor instead of allocating new memory.
+osscan.h:134: [style][CWE-398] (noExplicitConstructor) Struct 'Attr' has a constructor with 1 argument that is not explicit.
+osscan.h:105: [style][CWE-398] (noExplicitConstructor) Struct 'ShortStr < 5 >' has a constructor with 1 argument that is not explicit.
+NmapOps.cc:153: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'sourcesocklen' is less than zero.
+NmapOps.cc:580: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'sz' is less than zero.
+output.h:210: [performance][CWE-398] (passedByValue) Function parameter 's' should be passed by const reference.
+libnetutil/PacketElement.h:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 66 configurations. Use --force to check all configurations.
+libnetutil/PacketElement.h:105: [error][CWE-0] (syntaxError) Code 'classPacketElement{' is invalid C code. Use --std or --language to configure the language.
+libnetutil/netutil.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 102 configurations. Use --force to check all configurations.
+libnetutil/netutil.cc:4401: [style][CWE-570] (knownConditionTrueFalse) Condition '!pcap_selectable_fd_one_to_one()' is always false
+libnetutil/netutil.cc:4418: [style][CWE-571] (knownConditionTrueFalse) Condition 'pcap_status==0' is always true
+libnetutil/netutil.cc:476: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:514: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:612: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:635: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:656: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:989: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1406: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1407: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1448: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1472: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1484: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1565: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1680: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1681: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1687: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1688: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1705: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1706: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1707: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1714: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1715: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1716: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1734: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1739: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1823: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1828: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1848: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1922: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1930: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2222: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2261: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2373: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2387: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2411: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2419: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2434: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2441: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2445: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2447: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2475: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2514: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2545: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2689: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2726: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2749: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2835: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2836: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2848: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2875: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2876: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2877: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2982: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2999: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3031: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3039: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3063: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3118: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3426: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3481: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3628: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3634: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3693: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3699: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3708: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3712: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3735: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3748: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3752: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3803: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3818: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3820: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3905: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3987: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3997: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4049: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4495: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4497: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4498: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4499: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4534: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4548: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4577: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4578: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4592: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4637: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4638: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4684: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4741: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4742: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4781: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2088: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:2091: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:2092: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:2097: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:3091: [style][CWE-561] (duplicateBreak) Consecutive return, break, continue, goto or throw statements are unnecessary.
+libnetutil/netutil.cc:1280: [style][CWE-398] (variableScope) The scope of the variable 'opcode' can be reduced.
+libnetutil/netutil.cc:4623: [style][CWE-398] (variableScope) The scope of the variable 'listenrounds' can be reduced.
+libnetutil/netutil.cc:4624: [style][CWE-398] (variableScope) The scope of the variable 'rc' can be reduced.
+libnetutil/netutil.cc:4745: [style][CWE-398] (variableScope) The scope of the variable 'listenrounds' can be reduced.
+libnetutil/netutil.cc:4746: [style][CWE-398] (variableScope) The scope of the variable 'rc' can be reduced.
+libnetutil/netutil.cc:2169: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2191: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2195: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2277: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2305: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2313: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2320: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:4616: [style][CWE-398] (constVariable) Variable 'timeouts' can be declared as const array
+libnetutil/netutil.cc:4736: [style][CWE-398] (constVariable) Variable 'timeouts' can be declared as const array
+libnetutil/netutil.cc:1283: [style][CWE-563] (unreadVariable) Variable 'i' is assigned a value that is never used.
+libnetutil/netutil.cc:3624: [style][CWE-563] (unreadVariable) Variable 'sleeptime' is assigned a value that is never used.
+libnetutil/netutil.cc:3806: [style][CWE-563] (unreadVariable) Variable 'fdatalen' is assigned a value that is never used.
+libnetutil/netutil.cc:4892: [style][CWE-563] (unreadVariable) Variable 'maxfds' is assigned a value that is never used.
+libnetutil/netutil.cc:4893: [style][CWE-563] (unreadVariable) Variable 'flag' is assigned a value that is never used.
+libnetutil/netutil.cc:4934: [style][CWE-563] (unreadVariable) Variable 'flag' is assigned a value that is never used.
+libnetutil/netutil.cc:1493: [information][CWE-0] (ConfigurationNotChecked) Skipping configuration 'AF_LINK' since the value of 'AF_LINK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+libnetutil/netutil.cc:1506: [information][CWE-0] (ConfigurationNotChecked) Skipping configuration 'AF_LINK' since the value of 'AF_LINK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+NmapOps.cc:143: [style][CWE-561] (unusedFunction) The function 'ReInit' is never used.
+NmapOps.cc:148: [style][CWE-561] (unusedFunction) The function 'pf' is never used.
+NmapOps.cc:152: [style][CWE-561] (unusedFunction) The function 'SourceSockAddr' is never used.
+NmapOps.cc:173: [style][CWE-561] (unusedFunction) The function 'setSourceSockAddr' is never used.
+NmapOps.cc:181: [style][CWE-561] (unusedFunction) The function 'TimeSinceStart' is never used.
+NmapOps.cc:347: [style][CWE-561] (unusedFunction) The function 'RawScan' is never used.
+NmapOps.cc:361: [style][CWE-561] (unusedFunction) The function 'ValidateOptions' is never used.
+NmapOps.cc:533: [style][CWE-561] (unusedFunction) The function 'setMaxOSTries' is never used.
+NmapOps.cc:539: [style][CWE-561] (unusedFunction) The function 'setMaxRttTimeout' is never used.
+NmapOps.cc:547: [style][CWE-561] (unusedFunction) The function 'setMinRttTimeout' is never used.
+NmapOps.cc:555: [style][CWE-561] (unusedFunction) The function 'setInitialRttTimeout' is never used.
+NmapOps.cc:563: [style][CWE-561] (unusedFunction) The function 'setMaxRetransmissions' is never used.
+NmapOps.cc:571: [style][CWE-561] (unusedFunction) The function 'setMinHostGroupSz' is never used.
+NmapOps.cc:577: [style][CWE-561] (unusedFunction) The function 'setMaxHostGroupSz' is never used.
+NmapOps.cc:589: [style][CWE-561] (unusedFunction) The function 'setXSLStyleSheet' is never used.
+NmapOps.cc:598: [style][CWE-561] (unusedFunction) The function 'XSLStyleSheet' is never used.
+NmapOps.cc:615: [style][CWE-561] (unusedFunction) The function 'setSpoofMACAddress' is never used.
+NmapOps.cc:621: [style][CWE-561] (unusedFunction) The function 'chooseScripts' is never used.
+libnetutil/netutil.cc:205: [style][CWE-561] (unusedFunction) The function 'parse_ip_options' is never used.
+libnetutil/netutil.cc:400: [style][CWE-561] (unusedFunction) The function 'resolve' is never used.
+libnetutil/netutil.cc:407: [style][CWE-561] (unusedFunction) The function 'resolve_numeric' is never used.
+libnetutil/netutil.cc:427: [style][CWE-561] (unusedFunction) The function 'ip_is_reserved' is never used.
+libnetutil/netutil.cc:543: [style][CWE-561] (unusedFunction) The function 'mac_cache_get' is never used.
+libnetutil/netutil.cc:546: [style][CWE-561] (unusedFunction) The function 'mac_cache_set' is never used.
+libnetutil/netutil.cc:551: [style][CWE-561] (unusedFunction) The function 'in_cksum' is never used.
+libnetutil/netutil.cc:683: [style][CWE-561] (unusedFunction) The function 'ip_get_data' is never used.
+libnetutil/netutil.cc:716: [style][CWE-561] (unusedFunction) The function 'ipv6_get_data' is never used.
+libnetutil/netutil.cc:724: [style][CWE-561] (unusedFunction) The function 'ipv6_get_data_any' is never used.
+libnetutil/netutil.cc:729: [style][CWE-561] (unusedFunction) The function 'icmp_get_data' is never used.
+libnetutil/netutil.cc:744: [style][CWE-561] (unusedFunction) The function 'icmpv6_get_data' is never used.
+libnetutil/netutil.cc:763: [style][CWE-561] (unusedFunction) The function 'ipv4_pseudoheader_cksum' is never used.
+libnetutil/netutil.cc:799: [style][CWE-561] (unusedFunction) The function 'ipv6_pseudoheader_cksum' is never used.
+libnetutil/netutil.cc:837: [style][CWE-561] (unusedFunction) The function 'set_ipoptions' is never used.
+libnetutil/netutil.cc:846: [style][CWE-561] (unusedFunction) The function 'set_ttl' is never used.
+libnetutil/netutil.cc:1095: [style][CWE-561] (unusedFunction) The function 'eth_close_cached' is never used.
+libnetutil/netutil.cc:1144: [style][CWE-561] (unusedFunction) The function 'raw_socket_or_eth' is never used.
+libnetutil/netutil.cc:1264: [style][CWE-561] (unusedFunction) The function 'proto2ascii_lowercase' is never used.
+libnetutil/netutil.cc:1267: [style][CWE-561] (unusedFunction) The function 'proto2ascii_uppercase' is never used.
+libnetutil/netutil.cc:1605: [style][CWE-561] (unusedFunction) The function 'freeinterfaces' is never used.
+libnetutil/netutil.cc:1631: [style][CWE-561] (unusedFunction) The function 'devname2ipaddr' is never used.
+libnetutil/netutil.cc:1916: [style][CWE-561] (unusedFunction) The function 'islocalhost' is never used.
+libnetutil/netutil.cc:3605: [style][CWE-561] (unusedFunction) The function 'route_dst' is never used.
+libnetutil/netutil.cc:3800: [style][CWE-561] (unusedFunction) The function 'send_frag_ip_packet' is never used.
+libnetutil/netutil.cc:4067: [style][CWE-561] (unusedFunction) The function 'send_ipv6_packet_eth_or_sd' is never used.
+libnetutil/netutil.cc:4608: [style][CWE-561] (unusedFunction) The function 'doND' is never used.
+libnetutil/netutil.cc:4728: [style][CWE-561] (unusedFunction) The function 'doArp' is never used.
+libnetutil/netutil.cc:4862: [style][CWE-561] (unusedFunction) The function 'grab_next_host_spec' is never used.
+libnetutil/netutil.cc:4931: [style][CWE-561] (unusedFunction) The function 'get_max_open_descriptors' is never used.
+libnetutil/netutil.cc:4956: [style][CWE-561] (unusedFunction) The function 'max_sd' is never used.
+nofile:0: [information][CWE-0] (unmatchedSuppression) Unmatched suppression: missingIncludeSystem

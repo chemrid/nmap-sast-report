@@ -1,0 +1,19 @@
+nmap.cc:1658: [warning][CWE-788] (arrayIndexOutOfBoundsCond) Either the condition 'pos>=6' is redundant or the array 'mac_data[6]' is accessed at index 6, which is out of bounds.
+nmap.cc:2441: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!p' is redundant or there is pointer arithmetic with NULL pointer.
+nmap.cc:2449: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!p' is redundant or there is pointer arithmetic with NULL pointer.
+nmap.cc:2462: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!q' is redundant or there is overflow in pointer subtraction.
+nmap.cc:2506: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!q' is redundant or there is possible null pointer dereference: q.
+nmap.cc:2528: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!q' is redundant or there is possible null pointer dereference: q.
+nmap.cc:2547: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!q' is redundant or there is possible null pointer dereference: q.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::decoy_arguments' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::exclude_file' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::exclude_spec' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::kiddiefilename' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::machinefilename' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::normalfilename' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::spoofSource' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::spoofmac' is not initialized in the constructor.
+nmap.cc:453: [warning][CWE-398] (uninitMemberVar) Member variable 'delayed_options::xmlfilename' is not initialized in the constructor.
+osscan.h:202: [warning][CWE-398] (noOperatorEq) Struct 'FingerTest' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+osscan.h:204: [warning][CWE-398] (copyCtorPointerCopying) Value of pointer 'results', which points to allocated memory, is copied in copy constructor instead of allocating new memory.
+pass2: timeout or error

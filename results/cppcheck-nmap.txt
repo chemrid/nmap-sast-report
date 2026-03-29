@@ -1,0 +1,871 @@
+libnetutil/EthernetHeader.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 66 configurations. Use --force to check all configurations.
+NmapOps.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 78 configurations. Use --force to check all configurations.
+libnetutil/ICMPv4Header.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 66 configurations. Use --force to check all configurations.
+libnetutil/IPv4Header.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 67 configurations. Use --force to check all configurations.
+libnetutil/EthernetHeader.h:117: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/EthernetHeader.h:119: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/EthernetHeader.h:121: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/EthernetHeader.cc:180: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition 'm==NULL' is redundant or there is possible null pointer dereference: m.
+libnetutil/EthernetHeader.cc:198: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition 'm==NULL' is redundant or there is possible null pointer dereference: m.
+libnetutil/PacketElement.h:153: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/PacketElement.h:158: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/PacketElement.h:144: [style][CWE-398] (variableScope) The scope of the variable 'otherslen' can be reduced.
+libnetutil/PacketElement.h:144: [style][CWE-563] (unreadVariable) Variable 'otherslen' is assigned a value that is never used.
+libnetutil/ICMPv4Header.h:441: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.h:443: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.h:445: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.h:448: [style][CWE-0] (missingOverride) The function 'setType' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.h:449: [style][CWE-0] (missingOverride) The function 'getType' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.h:454: [style][CWE-0] (missingOverride) The function 'setCode' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.h:455: [style][CWE-0] (missingOverride) The function 'getCode' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.h:526: [style][CWE-0] (missingOverride) The function 'isError' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv4Header.cc:440: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/IPv4Header.h:133: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv4Header.h:135: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv4Header.h:137: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv4Header.h:187: [style][CWE-0] (missingOverride) The function 'setNextHeader' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv4Header.h:188: [style][CWE-0] (missingOverride) The function 'getNextHeader' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv4Header.h:199: [style][CWE-0] (missingOverride) The function 'getDestinationAddress' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv4Header.h:206: [style][CWE-0] (missingOverride) The function 'getSourceAddress' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv4Header.h:209: [style][CWE-0] (missingOverride) The function 'getAddressLength' overrides a function in a base class but is not marked with a 'override' specifier.
+NmapOps.cc:75: [warning][CWE-398] (uninitMemberVar) Member variable 'NmapOps::traceroute' is not initialized in the constructor.
+NmapOps.cc:75: [warning][CWE-398] (uninitMemberVar) Member variable 'NmapOps::scriptargsfile' is not initialized in the constructor.
+NmapOps.cc:75: [warning][CWE-398] (uninitMemberVar) Member variable 'NmapOps::spoof_mac' is not initialized in the constructor.
+osscan.h:202: [warning][CWE-398] (noOperatorEq) Struct 'FingerTest' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+osscan.h:204: [warning][CWE-398] (copyCtorPointerCopying) Value of pointer 'results', which points to allocated memory, is copied in copy constructor instead of allocating new memory.
+osscan.h:134: [style][CWE-398] (noExplicitConstructor) Struct 'Attr' has a constructor with 1 argument that is not explicit.
+osscan.h:105: [style][CWE-398] (noExplicitConstructor) Struct 'ShortStr < 5 >' has a constructor with 1 argument that is not explicit.
+NmapOps.cc:153: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'sourcesocklen' is less than zero.
+NmapOps.cc:580: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'sz' is less than zero.
+output.h:210: [performance][CWE-398] (passedByValue) Function parameter 's' should be passed by const reference.
+libnetutil/IPv6Header.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 67 configurations. Use --force to check all configurations.
+libnetutil/IPv6Header.h:125: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.h:127: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.h:129: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.h:150: [style][CWE-0] (missingOverride) The function 'setNextHeader' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.h:152: [style][CWE-0] (missingOverride) The function 'getNextHeader' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.h:161: [style][CWE-0] (missingOverride) The function 'getSourceAddress' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.h:167: [style][CWE-0] (missingOverride) The function 'getDestinationAddress' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.h:170: [style][CWE-0] (missingOverride) The function 'getAddressLength' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/IPv6Header.cc:440: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition 'val==NULL' is redundant or there is possible null pointer dereference: val.
+libnetutil/IPv6Header.cc:472: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition 'val==NULL' is redundant or there is possible null pointer dereference: val.
+libnetutil/IPv6Header.cc:192: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::tclass' is never used.
+libnetutil/IPv6Header.cc:221: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::tclass' is never used.
+libnetutil/IPv6Header.cc:241: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::ver' is never used.
+libnetutil/IPv6Header.cc:252: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::flow' is never used.
+libnetutil/IPv6Header.cc:283: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::ver' is never used.
+libnetutil/IPv6Header.cc:294: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::flow' is never used.
+libnetutil/IPv6Header.cc:331: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::tclass2' is never used.
+libnetutil/IPv6Header.cc:356: [style][CWE-563] (unusedStructMember) struct member 'firstbyte::tclass2' is never used.
+libnetutil/PacketElement.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 66 configurations. Use --force to check all configurations.
+libnetutil/TCPHeader.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 67 configurations. Use --force to check all configurations.
+libnetutil/UDPHeader.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 66 configurations. Use --force to check all configurations.
+libnetutil/netutil.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 102 configurations. Use --force to check all configurations.
+libnetutil/UDPHeader.h:102: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.h:104: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.h:106: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.h:108: [style][CWE-0] (missingOverride) The function 'setSourcePort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.h:109: [style][CWE-0] (missingOverride) The function 'getSourcePort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.h:111: [style][CWE-0] (missingOverride) The function 'setDestinationPort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.h:112: [style][CWE-0] (missingOverride) The function 'getDestinationPort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.h:119: [style][CWE-0] (missingOverride) The function 'setSum' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/UDPHeader.cc:212: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/TCPHeader.cc:462: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:471: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:486: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:495: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:511: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:520: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:535: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:544: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:559: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:568: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:583: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:592: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:607: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:616: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:631: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.cc:640: [style][CWE-0] (returnNonBoolInBooleanFunction) Non-boolean value returned from function returning bool
+libnetutil/TCPHeader.h:184: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.h:186: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.h:188: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.h:190: [style][CWE-0] (missingOverride) The function 'setSourcePort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.h:191: [style][CWE-0] (missingOverride) The function 'getSourcePort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.h:193: [style][CWE-0] (missingOverride) The function 'setDestinationPort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.h:194: [style][CWE-0] (missingOverride) The function 'getDestinationPort' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.h:246: [style][CWE-0] (missingOverride) The function 'setSum' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/TCPHeader.cc:725: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/TCPHeader.cc:828: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/TCPHeader.cc:838: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/TCPHeader.cc:847: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/TCPHeader.cc:157: [style][CWE-398] (variableScope) The scope of the variable 'optinfo' can be reduced.
+libnetutil/TCPHeader.cc:208: [style][CWE-398] (variableScope) The scope of the variable 'opcode' can be reduced.
+libnetutil/TCPHeader.cc:211: [style][CWE-563] (unreadVariable) Variable 'i' is assigned a value that is never used.
+nmap_dns.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 77 configurations. Use --force to check all configurations.
+osscan.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 78 configurations. Use --force to check all configurations.
+charpool.h:85: [style][CWE-398] (noExplicitConstructor) Class 'CharPool' has a constructor with 1 argument that is not explicit.
+libnetutil/ARPHeader.h:175: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ARPHeader.h:177: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ARPHeader.h:179: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:567: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:569: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:571: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:574: [style][CWE-0] (missingOverride) The function 'setType' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:575: [style][CWE-0] (missingOverride) The function 'getType' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:580: [style][CWE-0] (missingOverride) The function 'setCode' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:581: [style][CWE-0] (missingOverride) The function 'getCode' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Header.h:665: [style][CWE-0] (missingOverride) The function 'isError' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Option.h:200: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6Option.h:202: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/ICMPv6RRBody.h:196: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/RawData.h:79: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/RawData.h:81: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/RawData.h:83: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/HopByHopHeader.h:108: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/HopByHopHeader.h:110: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/HopByHopHeader.h:112: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/DestOptsHeader.h:82: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/DestOptsHeader.h:83: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/FragmentHeader.h:92: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/FragmentHeader.h:94: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/FragmentHeader.h:96: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/RoutingHeader.h:157: [style][CWE-0] (missingOverride) The function 'getBufferPointer' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/RoutingHeader.h:159: [style][CWE-0] (missingOverride) The function 'protocol_id' overrides a function in a base class but is not marked with a 'override' specifier.
+libnetutil/RoutingHeader.h:161: [style][CWE-0] (missingOverride) The function 'print' overrides a function in a base class but is not marked with a 'override' specifier.
+FPEngine.h:218: [style][CWE-0] (missingOverride) The function 'os_scan' overrides a function in a base class but is not marked with a 'override' specifier.
+FPEngine.h:383: [style][CWE-0] (missingOverride) The function 'build_probe_list' overrides a function in a base class but is not marked with a 'override' specifier.
+FPEngine.h:392: [style][CWE-0] (missingOverride) The function 'done' overrides a function in a base class but is not marked with a 'override' specifier.
+FPEngine.h:393: [style][CWE-0] (missingOverride) The function 'schedule' overrides a function in a base class but is not marked with a 'override' specifier.
+FPEngine.h:394: [style][CWE-0] (missingOverride) The function 'callback' overrides a function in a base class but is not marked with a 'override' specifier.
+FingerPrintResults.h:154: [style][CWE-0] (missingOverride) The function 'merge_fpr' overrides a function in a base class but is not marked with a 'override' specifier.
+FingerPrintResults.h:166: [style][CWE-0] (missingOverride) The function 'OmitSubmissionFP' overrides a function in a base class but is not marked with a 'override' specifier.
+FingerPrintResults.h:167: [style][CWE-0] (missingOverride) The function 'merge_fpr' overrides a function in a base class but is not marked with a 'override' specifier.
+osscan.cc:1168: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!fp' is redundant or there is possible null pointer dereference: fp.
+osscan.cc:1002: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!thisline' is redundant or there is pointer arithmetic with NULL pointer.
+osscan.cc:1016: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition 'end==NULL' is redundant or there is pointer arithmetic with NULL pointer.
+osscan.cc:1023: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition 'end==NULL' is redundant or there is pointer arithmetic with NULL pointer.
+osscan.cc:1056: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition 'thisline==NULL' is redundant or there is pointer arithmetic with NULL pointer.
+osscan.cc:1188: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!p' is redundant or there is pointer arithmetic with NULL pointer.
+osscan.cc:1189: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!p' is redundant or there is pointer arithmetic with NULL pointer.
+osscan.cc:1210: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!q' is redundant or there is overflow in pointer subtraction.
+osscan.cc:534: [style][CWE-398] (variableScope) The scope of the variable 'acc' can be reduced.
+osscan.cc:536: [style][CWE-398] (variableScope) The scope of the variable 'skipfp' can be reduced.
+osscan.cc:939: [style][CWE-398] (variableScope) The scope of the variable 'len' can be reduced.
+osscan.cc:769: [warning][CWE-825] (derefInvalidIteratorRedundantCheck) Either the condition 'idx==def->AttrIdx.end()' is redundant or there is possible dereference of an invalid iterator: idx.
+osscan2.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 82 configurations. Use --force to check all configurations.
+osscan.cc:109: [style][CWE-563] (unreadVariable) Variable 'q' is assigned a value that is never used.
+osscan.cc:555: [style][CWE-563] (unreadVariable) Variable 'state' is assigned a value that is never used.
+osscan.cc:753: [style][CWE-563] (unreadVariable) Variable 'q' is assigned a value that is never used.
+osscan.cc:239: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan.cc:548: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan.cc:915: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.h:216: [warning][CWE-398] (uninitMemberVar) Member variable 'Answer::record_type' is not initialized in the constructor.
+nmap_dns.h:216: [warning][CWE-398] (uninitMemberVar) Member variable 'Answer::record_class' is not initialized in the constructor.
+nmap_dns.h:216: [warning][CWE-398] (uninitMemberVar) Member variable 'Answer::ttl' is not initialized in the constructor.
+nmap_dns.h:216: [warning][CWE-398] (uninitMemberVar) Member variable 'Answer::length' is not initialized in the constructor.
+nmap_dns.cc:228: [warning][CWE-398] (uninitMemberVar) Member variable 'dns_server::nsd' is not initialized in the constructor.
+nmap_dns.cc:302: [warning][CWE-398] (noCopyConstructor) Class 'HostCache' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).
+nmap_dns.cc:302: [warning][CWE-398] (noOperatorEq) Class 'HostCache' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+timing.h:166: [style][CWE-398] (noExplicitConstructor) Class 'RateMeter' has a constructor with 1 argument that is not explicit.
+timing.h:198: [style][CWE-398] (noExplicitConstructor) Class 'PacketRateMeter' has a constructor with 1 argument that is not explicit.
+timing.h:218: [style][CWE-398] (noExplicitConstructor) Class 'ScanProgressMeter' has a constructor with 1 argument that is not explicit.
+osscan2.h:232: [style][CWE-398] (noExplicitConstructor) Class 'HostOsScanStats' has a constructor with 1 argument that is not explicit.
+osscan2.h:348: [style][CWE-398] (noExplicitConstructor) Class 'HostOsScan' has a constructor with 1 argument that is not explicit.
+osscan2.h:455: [style][CWE-398] (noExplicitConstructor) Class 'OsScanInfo' has a constructor with 1 argument that is not explicit.
+nmap_dns.h:174: [style][CWE-0] (missingOverride) The function 'clone' overrides a function in a base class but is not marked with a 'override' specifier.
+nmap_dns.h:176: [style][CWE-0] (missingOverride) The function 'parseFromBuffer' overrides a function in a base class but is not marked with a 'override' specifier.
+nmap_dns.h:183: [style][CWE-0] (missingOverride) The function 'clone' overrides a function in a base class but is not marked with a 'override' specifier.
+nmap_dns.h:185: [style][CWE-0] (missingOverride) The function 'parseFromBuffer' overrides a function in a base class but is not marked with a 'override' specifier.
+nmap_dns.h:195: [style][CWE-0] (missingOverride) The function 'clone' overrides a function in a base class but is not marked with a 'override' specifier.
+nmap_dns.h:197: [style][CWE-0] (missingOverride) The function 'parseFromBuffer' overrides a function in a base class but is not marked with a 'override' specifier.
+nmap_dns.cc:1772: [style][CWE-571] (badBitmaskCheck) Operator '|' with one operand equal to zero is redundant.
+nmap_dns.cc:326: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:528: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:831: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:840: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:857: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:990: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:1001: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:1330: [style][CWE-398] (cstyleCast) C-style pointer casting
+nmap_dns.cc:1155: [style][CWE-398] (variableScope) The scope of the variable 'tp' can be reduced.
+nmap_dns.cc:1349: [style][CWE-398] (variableScope) The scope of the variable 'timeout' can be reduced.
+nmap_dns.cc:1350: [style][CWE-398] (variableScope) The scope of the variable 'i' can be reduced.
+nmap_dns.cc:1372: [style][CWE-398] (shadowVariable) Local variable 'i' shadows outer variable
+nmap_dns.cc:730: [style][CWE-398] (constParameter) Parameter 'reqinfo' can be declared as reference to const
+nmap_dns.cc:283: [style][CWE-563] (unreadVariable) Variable 'he.cache_hits' is assigned a value that is never used.
+nmap_dns.cc:605: [style][CWE-563] (unusedVariable) Unused variable: infoI
+nmap_dns.cc:1770: [style][CWE-563] (unreadVariable) Variable 'tmp' is assigned a value that is never used.
+nmap_dns.cc:1886: [style][CWE-563] (unreadVariable) Variable 'tmp' is assigned a value that is never used.
+nmap_dns.cc:1981: [style][CWE-563] (unreadVariable) Variable 'tmp' is assigned a value that is never used.
+nmap_dns.cc:455: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:503: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:615: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:656: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:886: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:1013: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:1066: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:1505: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nmap_dns.cc:1630: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:3252: [warning][CWE-398] (uninitMemberVar) Member variable 'OsScanInfo::starttime' is not initialized in the constructor.
+osscan2.h:515: [style][CWE-398] (unusedPrivateFunction) Unused private function: 'OSScan::chunk_and_do_scan'
+osscan2.cc:1364: [warning][CWE-398] (noCopyConstructor) Class 'HostOsScan' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).
+osscan2.cc:1364: [warning][CWE-398] (noOperatorEq) Class 'HostOsScan' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+osscan2.cc:3232: [warning][CWE-398] (noCopyConstructor) Class 'HostOsScanInfo' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).
+osscan2.cc:3232: [warning][CWE-398] (noOperatorEq) Class 'HostOsScanInfo' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+osscan2.cc:225: [style][CWE-398] (redundantCondition) Redundant condition: ipid_diffs[i]%256==0. 'A || (!A && B)' is equivalent to 'A || B'
+osscan2.cc:2044: [style][CWE-571] (knownConditionTrueFalse) Condition 'i>=3' is always true
+osscan2.cc:563: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:734: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:877: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:1909: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:1969: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:1992: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2146: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2147: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2180: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2188: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2205: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2621: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2646: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2715: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2785: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2896: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2935: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2940: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2941: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:2997: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3004: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3019: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3020: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3053: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3071: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3072: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3138: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3173: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3226: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:3305: [style][CWE-398] (cstyleCast) C-style pointer casting
+osscan2.cc:386: [style][CWE-398] (variableScope) The scope of the variable 'filterlen' can be reduced.
+osscan2.cc:388: [style][CWE-398] (variableScope) The scope of the variable 'targetno' can be reduced.
+osscan2.cc:462: [style][CWE-398] (variableScope) The scope of the variable 'unableToSend' can be reduced.
+osscan2.cc:463: [style][CWE-398] (variableScope) The scope of the variable 'expectReplies' can be reduced.
+osscan2.cc:628: [style][CWE-398] (variableScope) The scope of the variable 'unableToSend' can be reduced.
+osscan2.cc:629: [style][CWE-398] (variableScope) The scope of the variable 'expectReplies' can be reduced.
+osscan2.cc:796: [style][CWE-398] (variableScope) The scope of the variable 'distance' can be reduced.
+osscan2.cc:853: [style][CWE-398] (variableScope) The scope of the variable 'bestacc' can be reduced.
+osscan2.cc:854: [style][CWE-398] (variableScope) The scope of the variable 'bestaccidx' can be reduced.
+osscan2.cc:886: [style][CWE-398] (variableScope) The scope of the variable 'FPR' can be reduced.
+osscan2.cc:912: [style][CWE-398] (variableScope) The scope of the variable 'HOS' can be reduced.
+osscan2.cc:1538: [style][CWE-398] (variableScope) The scope of the variable 'packTime' can be reduced.
+osscan2.cc:1894: [style][CWE-398] (variableScope) The scope of the variable 'tcp' can be reduced.
+osscan2.cc:1899: [style][CWE-398] (variableScope) The scope of the variable 'probe' can be reduced.
+osscan2.cc:2117: [style][CWE-398] (variableScope) The scope of the variable 'res' can be reduced.
+osscan2.cc:2271: [style][CWE-398] (variableScope) The scope of the variable 'b' can be reduced.
+osscan2.cc:2298: [style][CWE-398] (variableScope) The scope of the variable 'seq_stddev' can be reduced.
+osscan2.cc:2299: [style][CWE-398] (variableScope) The scope of the variable 'seq_rate' can be reduced.
+osscan2.cc:2302: [style][CWE-398] (variableScope) The scope of the variable 'seq_gcd' can be reduced.
+osscan2.cc:2612: [style][CWE-398] (variableScope) The scope of the variable 'seq_response_num' can be reduced.
+osscan2.cc:3134: [style][CWE-398] (variableScope) The scope of the variable 'opcode' can be reduced.
+osscan2.cc:3343: [style][CWE-398] (variableScope) The scope of the variable 'timedout' can be reduced.
+osscan2.cc:3535: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'Targets.size()' is less than zero.
+osscan2.cc:3311: [style][CWE-398] (useStlAlgorithm) Consider using std::find_if algorithm instead of a raw loop.
+osscan2.cc:462: [style][CWE-563] (unreadVariable) Variable 'unableToSend' is assigned a value that is never used.
+osscan2.cc:463: [style][CWE-563] (unreadVariable) Variable 'expectReplies' is assigned a value that is never used.
+osscan2.cc:464: [style][CWE-563] (unreadVariable) Variable 'to_usec' is assigned a value that is never used.
+osscan2.cc:796: [style][CWE-563] (unreadVariable) Variable 'distance' is assigned a value that is never used.
+osscan2.cc:2117: [style][CWE-563] (unreadVariable) Variable 'res' is assigned a value that is never used.
+osscan2.cc:2223: [style][CWE-563] (unreadVariable) Variable 'res' is assigned a value that is never used.
+osscan2.cc:3343: [style][CWE-563] (unreadVariable) Variable 'timedout' is assigned a value that is never used.
+osscan2.cc:447: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:483: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:502: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:532: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:540: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:603: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:651: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:673: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:703: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:712: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:774: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:799: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:856: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:888: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:918: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:1212: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:1277: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:1428: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:1511: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:1571: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:1645: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:3310: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:3329: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:3348: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+osscan2.cc:3354: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 78 configurations. Use --force to check all configurations.
+libnetutil/netutil.cc:4401: [style][CWE-570] (knownConditionTrueFalse) Condition '!pcap_selectable_fd_one_to_one()' is always false
+libnetutil/netutil.cc:4418: [style][CWE-571] (knownConditionTrueFalse) Condition 'pcap_status==0' is always true
+libnetutil/netutil.cc:476: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:514: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:612: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:635: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:656: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:989: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1406: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1407: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1448: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1472: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1484: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1565: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1680: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1681: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1687: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1688: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1705: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1706: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1707: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1714: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1715: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1716: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1734: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1739: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1823: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1828: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1848: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1922: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:1930: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2222: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2261: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2373: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2387: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2411: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2419: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2434: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2441: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2445: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2447: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2475: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2514: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2545: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2689: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2726: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2749: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2835: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2836: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2848: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2875: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2876: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2877: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2982: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2999: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3031: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3039: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3063: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3118: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3426: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3481: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3628: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3634: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3693: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3699: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3708: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3712: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3735: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3748: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3752: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3803: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3818: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3820: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3905: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3987: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:3997: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4049: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4495: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4497: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4498: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4499: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4534: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4548: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4577: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4578: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4592: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4637: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4638: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4684: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4741: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4742: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:4781: [style][CWE-398] (cstyleCast) C-style pointer casting
+libnetutil/netutil.cc:2088: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:2091: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:2092: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:2097: [style][CWE-398] (duplicateExpressionTernary) Same expression in both branches of ternary operator.
+libnetutil/netutil.cc:3091: [style][CWE-561] (duplicateBreak) Consecutive return, break, continue, goto or throw statements are unnecessary.
+libnetutil/netutil.cc:1280: [style][CWE-398] (variableScope) The scope of the variable 'opcode' can be reduced.
+libnetutil/netutil.cc:4623: [style][CWE-398] (variableScope) The scope of the variable 'listenrounds' can be reduced.
+libnetutil/netutil.cc:4624: [style][CWE-398] (variableScope) The scope of the variable 'rc' can be reduced.
+libnetutil/netutil.cc:4745: [style][CWE-398] (variableScope) The scope of the variable 'listenrounds' can be reduced.
+libnetutil/netutil.cc:4746: [style][CWE-398] (variableScope) The scope of the variable 'rc' can be reduced.
+libnetutil/netutil.cc:2169: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2191: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2195: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2277: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2305: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2313: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:2320: [portability][CWE-475] (varFuncNullUB) Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.
+libnetutil/netutil.cc:4616: [style][CWE-398] (constVariable) Variable 'timeouts' can be declared as const array
+libnetutil/netutil.cc:4736: [style][CWE-398] (constVariable) Variable 'timeouts' can be declared as const array
+libnetutil/netutil.cc:1283: [style][CWE-563] (unreadVariable) Variable 'i' is assigned a value that is never used.
+libnetutil/netutil.cc:3624: [style][CWE-563] (unreadVariable) Variable 'sleeptime' is assigned a value that is never used.
+libnetutil/netutil.cc:3806: [style][CWE-563] (unreadVariable) Variable 'fdatalen' is assigned a value that is never used.
+libnetutil/netutil.cc:4892: [style][CWE-563] (unreadVariable) Variable 'maxfds' is assigned a value that is never used.
+libnetutil/netutil.cc:4893: [style][CWE-563] (unreadVariable) Variable 'flag' is assigned a value that is never used.
+libnetutil/netutil.cc:4934: [style][CWE-563] (unreadVariable) Variable 'flag' is assigned a value that is never used.
+libnetutil/netutil.cc:1493: [information][CWE-0] (ConfigurationNotChecked) Skipping configuration 'AF_LINK' since the value of 'AF_LINK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+libnetutil/netutil.cc:1506: [information][CWE-0] (ConfigurationNotChecked) Skipping configuration 'AF_LINK' since the value of 'AF_LINK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+portlist.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 78 configurations. Use --force to check all configurations.
+portlist.cc:798: [style][CWE-570] (knownConditionTrueFalse) Condition 'o.debugging>2' is always false
+portlist.cc:303: [style][CWE-398] (cstyleCast) C-style pointer casting
+portlist.cc:413: [style][CWE-398] (cstyleCast) C-style pointer casting
+portlist.cc:534: [style][CWE-398] (cstyleCast) C-style pointer casting
+portlist.cc:725: [style][CWE-398] (cstyleCast) C-style pointer casting
+portlist.cc:726: [style][CWE-398] (cstyleCast) C-style pointer casting
+portlist.cc:318: [style][CWE-398] (variableScope) The scope of the variable 'p' can be reduced.
+portlist.cc:564: [style][CWE-398] (variableScope) The scope of the variable 'port' can be reduced.
+portlist.cc:310: [warning][CWE-683] (funcArgOrderDifferent) Function 'setServiceProbeResults' argument order different: declaration 'portno, protocol, sres, sname, tunnel, product, version, hostname, ostype, devicetype, extrainfo, cpe, fingerprint' definition 'portno, protocol, sres, sname, tunnel, product, version, extrainfo, hostname, ostype, devicetype, cpe, fingerprint'
+portlist.cc:150: [style][CWE-398] (shadowVariable) Local variable 'service' shadows outer variable
+portlist.cc:714: [style][CWE-398] (constParameter) Parameter 'ports' can be declared as pointer to const
+portlist.cc:253: [style][CWE-563] (unreadVariable) Variable 'spaceleft' is assigned a value that is never used.
+portlist.cc:316: [style][CWE-563] (unusedVariable) Unused variable: it
+portlist.cc:917: [style][CWE-563] (unreadVariable) Variable 'popportidx' is assigned a value that is never used.
+portlist.cc:105: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+portlist.cc:126: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+portlist.cc:371: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+protocols.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 77 configurations. Use --force to check all configurations.
+protocols.cc:114: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!fp' is redundant or there is possible null pointer dereference: fp.
+protocols.cc:95: [style][CWE-398] (variableScope) The scope of the variable 'p' can be reduced.
+protocols.cc:177: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 80 configurations. Use --force to check all configurations.
+output.cc:2603: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition 's==NULL' is redundant or there is possible null pointer dereference: s.
+output.cc:2608: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition 's==NULL' is redundant or there is possible null pointer dereference: s.
+output.cc:150: [style][CWE-398] (cstyleCast) C-style pointer casting
+output.cc:151: [style][CWE-398] (cstyleCast) C-style pointer casting
+output.cc:859: [style][CWE-398] (cstyleCast) C-style pointer casting
+output.cc:1706: [style][CWE-398] (cstyleCast) C-style pointer casting
+output.cc:1710: [style][CWE-398] (cstyleCast) C-style pointer casting
+output.cc:1711: [style][CWE-398] (cstyleCast) C-style pointer casting
+output.cc:1773: [style][CWE-398] (cstyleCast) C-style pointer casting
+output.cc:360: [style][CWE-398] (variableScope) The scope of the variable 'nbits' can be reduced.
+output.cc:395: [style][CWE-398] (variableScope) The scope of the variable 'buf' can be reduced.
+output.cc:418: [style][CWE-398] (variableScope) The scope of the variable 'buf' can be reduced.
+output.cc:1086: [style][CWE-398] (variableScope) The scope of the variable 'end' can be reduced.
+output.cc:1242: [style][CWE-398] (variableScope) The scope of the variable 'macascii' can be reduced.
+output.cc:1505: [style][CWE-398] (variableScope) The scope of the variable 'classno' can be reduced.
+output.cc:1505: [style][CWE-398] (variableScope) The scope of the variable 'cpeno' can be reduced.
+output.cc:1505: [style][CWE-398] (variableScope) The scope of the variable 'familyno' can be reduced.
+output.cc:1507: [style][CWE-398] (variableScope) The scope of the variable 'overflow' can be reduced.
+output.cc:1508: [style][CWE-398] (variableScope) The scope of the variable 'types' can be reduced.
+output.cc:1509: [style][CWE-398] (variableScope) The scope of the variable 'cpes' can be reduced.
+output.cc:1510: [style][CWE-398] (variableScope) The scope of the variable 'fullfamily' can be reduced.
+output.cc:1513: [style][CWE-398] (variableScope) The scope of the variable 'numfamilies' can be reduced.
+output.cc:1514: [style][CWE-398] (variableScope) The scope of the variable 'tmpbuf' can be reduced.
+output.cc:1627: [style][CWE-398] (variableScope) The scope of the variable 'macascii' can be reduced.
+output.cc:1657: [style][CWE-398] (variableScope) The scope of the variable 'reps' can be reduced.
+output.cc:2207: [style][CWE-398] (variableScope) The scope of the variable 'script_output' can be reduced.
+output.cc:2231: [style][CWE-398] (variableScope) The scope of the variable 'script_output' can be reduced.
+output.cc:531: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'strftime(tbufs,sizeof(tbufs),"%Y-%m-%d %H:%M:%S %Z",&tm)' is less than zero.
+output.cc:391: [performance][CWE-398] (passedByValue) Function parameter 's' should be passed by const reference.
+output.cc:414: [performance][CWE-398] (passedByValue) Function parameter 's' should be passed by const reference.
+output.cc:857: [style][CWE-563] (unreadVariable) Variable 'written' is assigned a value that is never used.
+output.cc:2197: [style][CWE-563] (unreadVariable) Variable 'delim' is assigned a value that is never used.
+output.cc:791: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:1404: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2134: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2217: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2238: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2302: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2325: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2330: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2349: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2391: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2595: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2626: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+output.cc:2656: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:272: [warning][CWE-398] (noCopyConstructor) Class 'GroupScanStats' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).
+scan_engine.cc:272: [warning][CWE-398] (noOperatorEq) Class 'GroupScanStats' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+scan_engine.h:271: [style][CWE-398] (noExplicitConstructor) Class 'GroupScanStats' has a constructor with 1 argument that is not explicit.
+scan_engine.cc:1053: [style][CWE-571] (knownConditionTrueFalse) Condition 'ggood' is always true
+scan_engine_connect.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 81 configurations. Use --force to check all configurations.
+scan_engine.cc:172: [style][CWE-398] (variableScope) The scope of the variable 'f' can be reduced.
+scan_engine.cc:299: [style][CWE-398] (variableScope) The scope of the variable 'min_rate_add' can be reduced.
+scan_engine.cc:678: [style][CWE-398] (variableScope) The scope of the variable 'allfinished' can be reduced.
+scan_engine.cc:1034: [style][CWE-398] (variableScope) The scope of the variable 'thisHostGood' can be reduced.
+scan_engine.cc:1035: [style][CWE-398] (variableScope) The scope of the variable 'foundgood' can be reduced.
+scan_engine.cc:1119: [style][CWE-398] (variableScope) The scope of the variable 'timedout' can be reduced.
+scan_engine.cc:2504: [style][CWE-398] (variableScope) The scope of the variable 'hss' can be reduced.
+scan_engine.cc:600: [style][CWE-398] (useStlAlgorithm) Consider using std::find_if algorithm instead of a raw loop.
+scan_engine.cc:1034: [style][CWE-563] (unreadVariable) Variable 'thisHostGood' is assigned a value that is never used.
+scan_engine.cc:2579: [style][CWE-563] (unreadVariable) Variable 'maxtries' is assigned a value that is never used.
+scan_engine.cc:2580: [style][CWE-563] (unreadVariable) Variable 'expire_us' is assigned a value that is never used.
+scan_engine.cc:489: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:599: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:645: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:698: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:724: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:728: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:771: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:787: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:809: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:1045: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:1051: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:1129: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:1150: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:1157: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:1182: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:2343: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:2430: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:2447: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:2520: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:2603: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:2623: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine.cc:2699: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_connect.cc:531: [style][CWE-398] (variableScope) The scope of the variable 'timeleft' can be reduced.
+scan_engine_connect.cc:502: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 80 configurations. Use --force to check all configurations.
+scan_engine_connect.cc:596: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 84 configurations. Use --force to check all configurations.
+service_scan.cc:251: [warning][CWE-398] (uninitMemberVar) Member variable 'ServiceProbeMatch::match_context' is not initialized in the constructor.
+service_scan.cc:251: [warning][CWE-398] (uninitMemberVar) Member variable 'ServiceProbeMatch::MD_return' is not initialized in the constructor.
+service_scan.cc:1951: [warning][CWE-398] (noCopyConstructor) Class 'ServiceGroup' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).
+service_scan.cc:1951: [warning][CWE-398] (noOperatorEq) Class 'ServiceGroup' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+service_scan.cc:119: [style][CWE-398] (noExplicitConstructor) Class 'ServiceNFO' has a constructor with 1 argument that is not explicit.
+service_scan.cc:991: [style][CWE-571] (knownConditionTrueFalse) Condition 'product_template' is always true
+service_scan.cc:1004: [style][CWE-571] (knownConditionTrueFalse) Condition 'version_template' is always true
+service_scan.cc:1017: [style][CWE-571] (knownConditionTrueFalse) Condition 'info_template' is always true
+service_scan.cc:1027: [style][CWE-571] (knownConditionTrueFalse) Condition 'hostname_template' is always true
+service_scan.cc:1037: [style][CWE-571] (knownConditionTrueFalse) Condition 'ostype_template' is always true
+service_scan.cc:1047: [style][CWE-571] (knownConditionTrueFalse) Condition 'devicetype_template' is always true
+service_scan.cc:382: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!matchtext' is redundant or there is possible null pointer dereference: matchtext.
+service_scan.cc:1133: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!pd' is redundant or there is possible null pointer dereference: pd.
+service_scan.cc:1153: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!p' is redundant or there is possible null pointer dereference: p.
+service_scan.cc:1322: [warning][CWE-476] (nullPointerRedundantCheck) Either the condition '!fp' is redundant or there is possible null pointer dereference: fp.
+service_scan.cc:345: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition 'q==NULL' is redundant or there is pointer arithmetic with NULL pointer.
+service_scan.cc:398: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!p' is redundant or there is overflow in pointer subtraction.
+service_scan.cc:1144: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!p' is redundant or there is overflow in pointer subtraction.
+service_scan.cc:1147: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!p' is redundant or there is pointer arithmetic with NULL pointer.
+service_scan.cc:530: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:546: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:656: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:664: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:761: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:780: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:805: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:1157: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:1173: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:1703: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:1780: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:1928: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2062: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2077: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2349: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2351: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2418: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2422: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2517: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2519: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:2531: [style][CWE-398] (cstyleCast) C-style pointer casting
+service_scan.cc:671: [style][CWE-398] (variableScope) The scope of the variable 'repllen' can be reduced.
+service_scan.cc:715: [style][CWE-398] (variableScope) The scope of the variable 'rc' can be reduced.
+service_scan.cc:1464: [style][CWE-398] (variableScope) The scope of the variable 'MD' can be reduced.
+service_scan.cc:1690: [style][CWE-398] (variableScope) The scope of the variable 'err' can be reduced.
+service_scan.cc:2034: [style][CWE-398] (variableScope) The scope of the variable 'host' can be reduced.
+service_scan.cc:2300: [style][CWE-398] (variableScope) The scope of the variable 'svc' can be reduced.
+service_scan.cc:2420: [style][CWE-398] (variableScope) The scope of the variable 'err' can be reduced.
+service_scan.cc:2753: [style][CWE-398] (variableScope) The scope of the variable 'svc' can be reduced.
+service_scan.cc:753: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'subnum' is less than zero.
+service_scan.cc:768: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'subnum' is less than zero.
+service_scan.cc:792: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'subnum' is less than zero.
+service_scan.cc:826: [style][CWE-570] (unsignedLessThanZero) Checking if unsigned expression 'subnum' is less than zero.
+service_scan.cc:972: [style][CWE-570] (unsignedPositive) Unsigned expression 'productlen' can't be negative so it is unnecessary to test it.
+service_scan.cc:972: [style][CWE-570] (unsignedPositive) Unsigned expression 'versionlen' can't be negative so it is unnecessary to test it.
+service_scan.cc:972: [style][CWE-570] (unsignedPositive) Unsigned expression 'infolen' can't be negative so it is unnecessary to test it.
+service_scan.cc:973: [style][CWE-570] (unsignedPositive) Unsigned expression 'hostnamelen' can't be negative so it is unnecessary to test it.
+service_scan.cc:973: [style][CWE-570] (unsignedPositive) Unsigned expression 'ostypelen' can't be negative so it is unnecessary to test it.
+service_scan.cc:973: [style][CWE-570] (unsignedPositive) Unsigned expression 'devicetypelen' can't be negative so it is unnecessary to test it.
+service_scan.cc:663: [style][CWE-398] (constParameter) Parameter 'len' can be declared as pointer to const
+service_scan.cc:1270: [style][CWE-398] (useStlAlgorithm) Consider using std::any_of algorithm instead of a raw loop.
+service_scan.cc:1508: [style][CWE-398] (useStlAlgorithm) Consider using std::find_if algorithm instead of a raw loop.
+service_scan.cc:1515: [style][CWE-398] (useStlAlgorithm) Consider using std::find_if algorithm instead of a raw loop.
+service_scan.cc:2239: [style][CWE-398] (useStlAlgorithm) Consider using std::any_of algorithm instead of a raw loop.
+service_scan.cc:1706: [style][CWE-563] (unreadVariable) Variable 'spaceleft' is assigned a value that is never used.
+service_scan.cc:275: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1111: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1269: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1466: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1488: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1506: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1514: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1611: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1835: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1846: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1855: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1870: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1981: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:1989: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:2018: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:2021: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:2024: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:2238: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:2246: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:2714: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+service_scan.cc:2757: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:2159: [style][CWE-398] (duplicateConditionalAssign) The statement 'if (!goodone) goodone=true' is logically equivalent to 'goodone=true'.
+scan_engine_raw.cc:156: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:172: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:184: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:189: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:193: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:198: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:415: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:448: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:513: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:560: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:563: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:569: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:574: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:653: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:703: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:739: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:741: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:947: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1000: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1052: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1053: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1101: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1102: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1195: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1250: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1264: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1280: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1289: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1290: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1618: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1673: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1723: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1724: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1791: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1799: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1843: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1849: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1856: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1895: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1915: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1923: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1967: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1973: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:1980: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2026: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2045: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2051: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2060: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2094: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2097: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2146: [style][CWE-398] (cstyleCast) C-style pointer casting
+scan_engine_raw.cc:2054: [style][CWE-563] (redundantAssignment) Variable 'current_reason' is reassigned a value before the old one has been used.
+scan_engine_raw.cc:2054: [style][CWE-563] (redundantAssignment) Variable 'current_reason' is reassigned a value before the old one has been used.
+scan_engine_raw.cc:2054: [style][CWE-563] (redundantAssignment) Variable 'current_reason' is reassigned a value before the old one has been used.
+scan_engine_raw.cc:2054: [style][CWE-563] (redundantAssignment) Variable 'current_reason' is reassigned a value before the old one has been used.
+scan_engine_raw.cc:2054: [style][CWE-563] (redundantAssignment) Variable 'current_reason' is reassigned a value before the old one has been used.
+scan_engine_raw.cc:2054: [style][CWE-563] (redundantAssignment) Variable 'current_reason' is reassigned a value before the old one has been used.
+scan_engine_raw.cc:2054: [style][CWE-563] (redundantAssignment) Variable 'current_reason' is reassigned a value before the old one has been used.
+scan_engine_raw.cc:332: [style][CWE-398] (variableScope) The scope of the variable 'goodseq' can be reduced.
+scan_engine_raw.cc:395: [style][CWE-398] (variableScope) The scope of the variable 'ip_tmp' can be reduced.
+scan_engine_raw.cc:398: [style][CWE-398] (variableScope) The scope of the variable 'to_usec' can be reduced.
+scan_engine_raw.cc:839: [style][CWE-398] (variableScope) The scope of the variable 'len' can be reduced.
+scan_engine_raw.cc:840: [style][CWE-398] (variableScope) The scope of the variable 'targetno' can be reduced.
+scan_engine_raw.cc:1156: [style][CWE-398] (variableScope) The scope of the variable 'seq' can be reduced.
+scan_engine_raw.cc:1157: [style][CWE-398] (variableScope) The scope of the variable 'ack' can be reduced.
+scan_engine_raw.cc:1163: [style][CWE-398] (variableScope) The scope of the variable 'tcpopslen' can be reduced.
+scan_engine_raw.cc:1235: [style][CWE-398] (variableScope) The scope of the variable 'payload' can be reduced.
+scan_engine_raw.cc:1421: [style][CWE-398] (variableScope) The scope of the variable 'to_usec' can be reduced.
+scan_engine_raw.cc:1422: [style][CWE-398] (variableScope) The scope of the variable 'rc' can be reduced.
+scan_engine_raw.cc:1499: [style][CWE-398] (variableScope) The scope of the variable 'to_usec' can be reduced.
+scan_engine_raw.cc:1500: [style][CWE-398] (variableScope) The scope of the variable 'rc' can be reduced.
+scan_engine_raw.cc:1592: [style][CWE-398] (variableScope) The scope of the variable 'to_usec' can be reduced.
+scan_engine_raw.cc:420: [style][CWE-563] (unreadVariable) Variable 'timedout' is assigned a value that is never used.
+scan_engine_raw.cc:839: [style][CWE-563] (unreadVariable) Variable 'len' is assigned a value that is never used.
+scan_engine_raw.cc:1444: [style][CWE-563] (unreadVariable) Variable 'timedout' is assigned a value that is never used.
+scan_engine_raw.cc:1523: [style][CWE-563] (unreadVariable) Variable 'timedout' is assigned a value that is never used.
+scan_engine_raw.cc:1621: [style][CWE-563] (unreadVariable) Variable 'timedout' is assigned a value that is never used.
+scan_engine_raw.cc:485: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:551: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:676: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:717: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:754: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:795: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:1481: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:1562: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:1652: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:1688: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:1741: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:1837: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:1961: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:2074: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+scan_engine_raw.cc:2139: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+targets.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 77 configurations. Use --force to check all configurations.
+targets.cc:241: [style][CWE-571] (knownConditionTrueFalse) Condition 'target->deviceName()!=NULL' is always true
+targets.cc:125: [style][CWE-398] (cstyleCast) C-style pointer casting
+targets.cc:276: [style][CWE-398] (cstyleCast) C-style pointer casting
+targets.cc:414: [style][CWE-398] (cstyleCast) C-style pointer casting
+targets.cc:155: [style][CWE-398] (variableScope) The scope of the variable 'begin' can be reduced.
+targets.cc:312: [style][CWE-398] (variableScope) The scope of the variable 'buf' can be reduced.
+timing.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 47 configurations. Use --force to check all configurations.
+tcpip.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 85 configurations. Use --force to check all configurations.
+timing.cc:453: [performance][CWE-398] (useInitializationList) Variable 'packet_rate_meter' is assigned in constructor body. Consider performing initialization in initialization list.
+timing.cc:498: [warning][CWE-398] (noCopyConstructor) Class 'ScanProgressMeter' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).
+timing.cc:498: [warning][CWE-398] (noOperatorEq) Class 'ScanProgressMeter' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).
+traceroute.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 80 configurations. Use --force to check all configurations.
+tcpip.cc:1146: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!packet' is redundant or there is pointer arithmetic with NULL pointer.
+tcpip.cc:1147: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!packet' is redundant or there is pointer arithmetic with NULL pointer.
+tcpip.cc:1222: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!packet' is redundant or there is pointer arithmetic with NULL pointer.
+tcpip.cc:1223: [warning][CWE-682] (nullPointerArithmeticRedundantCheck) Either the condition '!packet' is redundant or there is pointer arithmetic with NULL pointer.
+tcpip.cc:146: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:147: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:150: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:200: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:201: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:203: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:304: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:366: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:421: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:455: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:463: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:466: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:531: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:535: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:563: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:564: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:584: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:603: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:625: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:626: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:682: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:686: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:708: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:712: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:781: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:782: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:812: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:815: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:835: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:838: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:896: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:897: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:940: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:956: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1026: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1047: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1048: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1095: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1131: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1145: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1146: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1221: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1222: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1269: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1357: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1396: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1422: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1465: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1483: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1535: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1538: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1667: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1777: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1795: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:1800: [style][CWE-398] (cstyleCast) C-style pointer casting
+tcpip.cc:122: [style][CWE-398] (variableScope) The scope of the variable 'tell' can be reduced.
+tcpip.cc:175: [style][CWE-398] (variableScope) The scope of the variable 'who_has' can be reduced.
+tcpip.cc:1773: [style][CWE-398] (variableScope) The scope of the variable 'op' can be reduced.
+tcpip.cc:1369: [style][CWE-398] (shadowVariable) Local variable 'iplen' shadows outer variable
+tcpip.cc:119: [style][CWE-398] (constParameter) Parameter 'now' can be declared as pointer to const
+tcpip.cc:167: [style][CWE-398] (constParameter) Parameter 'now' can be declared as pointer to const
+tcpip.cc:264: [style][CWE-398] (constParameter) Parameter 'now' can be declared as pointer to const
+utils.cc:0: [information][CWE-398] (toomanyconfigs) Too many #ifdef configurations - cppcheck only checks 3 of 49 configurations. Use --force to check all configurations.
+utils.cc:117: [style][CWE-571] (knownConditionTrueFalse) Return value 'tolower((int)(unsigned char)*wild)==tolower((int)(unsigned char)*test)' is always true
+utils.cc:124: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:166: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:178: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:179: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:183: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:184: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:235: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:260: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:262: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:309: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:576: [style][CWE-398] (cstyleCast) C-style pointer casting
+utils.cc:209: [style][CWE-398] (variableScope) The scope of the variable 'num' can be reduced.
+utils.cc:436: [style][CWE-563] (unreadVariable) Variable 'bp' is assigned a value that is never used.
+traceroute.cc:228: [style][CWE-398] (noExplicitConstructor) Class 'HostState' has a constructor with 1 argument that is not explicit.
+traceroute.cc:282: [style][CWE-398] (noExplicitConstructor) Class 'TracerouteState' has a constructor with 1 argument that is not explicit.
+traceroute.cc:650: [style][CWE-0] (missingOverride) The function 'build_packet' overrides a function in a base class but is not marked with a 'override' specifier.
+traceroute.cc:667: [style][CWE-0] (missingOverride) The function 'build_packet' overrides a function in a base class but is not marked with a 'override' specifier.
+traceroute.cc:710: [style][CWE-0] (missingOverride) The function 'build_packet' overrides a function in a base class but is not marked with a 'override' specifier.
+traceroute.cc:741: [style][CWE-0] (missingOverride) The function 'build_packet' overrides a function in a base class but is not marked with a 'override' specifier.
+traceroute.cc:773: [style][CWE-0] (missingOverride) The function 'build_packet' overrides a function in a base class but is not marked with a 'override' specifier.
+traceroute.cc:798: [style][CWE-0] (missingOverride) The function 'build_packet' overrides a function in a base class but is not marked with a 'override' specifier.
+traceroute.cc:1289: [style][CWE-570] (knownConditionTrueFalse) Condition 'probe->may_resend()' is always false
+traceroute.cc:653: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:685: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:689: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:692: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:696: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:718: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:722: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:724: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:728: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:748: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:755: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:776: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:781: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:801: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1080: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1085: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1090: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1095: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1100: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1130: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1145: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1158: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1176: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1186: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1192: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1198: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1215: [style][CWE-398] (cstyleCast) C-style pointer casting
+traceroute.cc:1145: [style][CWE-398] (shadowVariable) Local variable 'icmp' shadows outer variable
+traceroute.cc:1345: [style][CWE-398] (constVariable) Variable 'hostname' can be declared as reference to const
+traceroute.cc:1536: [style][CWE-398] (constParameter) Parameter 'now' can be declared as pointer to const
+traceroute.cc:1410: [style][CWE-398] (useStlAlgorithm) Consider using std::find_if algorithm instead of a raw loop.
+traceroute.cc:1424: [style][CWE-398] (useStlAlgorithm) Consider using std::accumulate algorithm instead of a raw loop.
+traceroute.cc:1500: [style][CWE-398] (useStlAlgorithm) Consider using std::accumulate algorithm instead of a raw loop.
+traceroute.cc:1385: [warning][CWE-457] (uninitvar) Uninitialized variable: hop.rtt
+traceroute.cc:1385: [error][CWE-457] (uninitStructMember) Uninitialized struct member: hop.rtt
+traceroute.cc:1023: [style][CWE-563] (unreadVariable) Variable 'hop' is assigned a value that is never used.
+traceroute.cc:413: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:428: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:849: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:867: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:873: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:929: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:933: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1276: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1300: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1328: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1338: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1350: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1367: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1403: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1409: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1423: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1434: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1499: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+traceroute.cc:1521: [performance][CWE-398] (postfixOperator) Prefer prefix ++/-- operators for non-primitive types.
+nofile:0: [information][CWE-0] (unmatchedSuppression) Unmatched suppression: missingInclude
+nofile:0: [information][CWE-0] (unmatchedSuppression) Unmatched suppression: missingIncludeSystem

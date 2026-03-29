@@ -154,12 +154,12 @@ Verified in Docker `--network none`:
 
 ## Possible Next Steps
 
-- [ ] Run Semgrep with network access (needs `p/c` ruleset download)
-- [ ] Run `cppcheck --max-configs=5` on nmap.cc with `-DHAVE_GETADDRINFO=1` — currently too slow under Docker-on-Windows, may be feasible on M1
-- [ ] Generate SARIF from Cppcheck XML: `pip install sarif-tools` then `sarif convert *.xml`
-- [ ] Upload results to GitHub Code Scanning (SARIF upload via `gh api`)
-- [ ] Review CWE-788 at `nmap.cc:1658` in context — upstream array OOB in MAC handling
-- [ ] Review CWE-475 in `libnetutil/netutil.cc` (7× NULL in variadic) — upstream portability issue
+- [x] Run Semgrep with network access — `p/c` ruleset: **0 findings** (268 files, 2 rules). `p/bash`: 0 findings. Results: `results/semgrep-c-network.json`
+- [x] Run `cppcheck --max-configs=5 -DHAVE_GETADDRINFO=1` on nmap.cc — completed on M1 (~2 min). Findings **identical** to pass1+pass2 — no new CWEs in getaddrinfo path. Result: `results/cppcheck-nmap-cc-getaddrinfo1.txt`
+- [x] Generate SARIF from Cppcheck XML — `cppcheck_xml_to_sarif.py` converter written; 218 findings, 22 rules → `results/cppcheck.sarif`
+- [x] Upload results to GitHub Code Scanning — SARIF uploaded via `gh api`, state: `complete`. Visible at https://github.com/chemrid/nmap-sast-report/security/code-scanning
+- [x] Review CWE-788 at `nmap.cc:1658` — **false positive**: `fatal()` (which calls `exit()`) guards the OOB path but cppcheck doesn't track `[[noreturn]]` semantics. No real vulnerability.
+- [x] Review CWE-475 in `libnetutil/netutil.cc` (7×) — **upstream noise**: `STRAPP(NULL,NULL)` and `STRAPP("...",NULL)` — variadic args are never read when NULL is passed. Technically UB per standard but safe on all realistic platforms. `// TODO: Needs refactoring` comment present upstream.
 
 ---
 

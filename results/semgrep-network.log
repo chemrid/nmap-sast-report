@@ -1,0 +1,29 @@
+Paths that match both --include and --exclude will be skipped by Semgrep.
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 357 files with 2 Code rules:
+  Scanning 268 files with 2 c rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 0 (0 blocking)
+ • Rules run: 2
+ • Targets scanned: 268
+ • Parsed lines: ~99.8%
+ • Scan skipped: 
+   ◦ Not matching --include patterns: 1398
+   ◦ Matching --exclude patterns: 7
+   ◦ Files larger than  files 1.0 MB: 1
+   ◦ Files matching .semgrepignore patterns: 52
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 2 rules on 268 files: 0 findings.
+(need more rules? `semgrep login` for additional free Semgrep Registry rules)
+
+If Semgrep missed a finding, please send us feedback to let us know!
+See https://semgrep.dev/docs/reporting-false-negatives/
